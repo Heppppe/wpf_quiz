@@ -10,7 +10,7 @@ As part of the Quiz task, you should prepare an application consisting of two mo
 - saving the quiz to a disk file in an encrypted form (e.g. with the AES algorithm),
 - loading an existing quiz from a disk file (decryption) and the possibility of further editing it,
 - user-friendly interface that protects against making mistakes.
-4. The question has four answers, of which at least one is correct (multiple choice question).  The quiz-taking application should have the following functionality:
+4. The question has four answers, of which at least one is correct (multiple choice question). The quiz-taking application should have the following functionality:
 - loading the quiz from a disk file (decryption),
 - buttons Start, End to start and end the quiz. Depending on the application status, the buttons should be enabled or disabled,
 - a timer to measure the time of solving the quiz,
