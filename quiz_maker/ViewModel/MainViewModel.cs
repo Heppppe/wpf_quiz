@@ -1,35 +1,38 @@
 ﻿using MvvmHelpers;
+using System.ComponentModel;
 using System.Windows.Input;
 
 namespace quiz_maker.ViewModel {
-    public class MainViewModel : BaseViewModel
+    public class MainViewModel : INotifyPropertyChanged
     {
         private object _currentViewModel;
+
         public object CurrentViewModel
         {
             get => _currentViewModel;
-            set { _currentViewModel = value; OnPropertyChanged(); }
+            set
+            {
+                if (_currentViewModel != value)
+                {
+                    _currentViewModel = value;
+                    OnPropertyChanged();
+                }
+            }
         }
 
-        public ICommand NavigateToMenuCommand { get; }
-        public ICommand NavigateToEditorCommand { get; }
+        public static MainViewModel Current { get; private set; }
 
         public MainViewModel()
         {
-            NavigateToMenuCommand = new RelayCommand(_ => NavigateToMenu());
-            NavigateToEditorCommand = new RelayCommand(q => NavigateToEditor(q));
-
-            NavigateToMenu();
+            Current = this;
+            CurrentViewModel = new QuizMenuViewModel();
         }
 
-        private void NavigateToMenu()
-        {
-            CurrentViewModel = new QuizMenuViewModel(this);
-        }
+        public event PropertyChangedEventHandler PropertyChanged;
 
-        private void NavigateToEditor(Quiz quiz)
+        protected void OnPropertyChanged(string propertyName = null)
         {
-            CurrentViewModel = new QuizEditorViewModel(quiz);
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

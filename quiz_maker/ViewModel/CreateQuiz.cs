@@ -2,28 +2,30 @@
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
 
-public class CreateQuiz : INotifyPropertyChanged
-{
-    private string _quizName;
-
-    public string QuizName
+namespace quiz_maker.ViewModel{
+    public class CreateQuiz : INotifyPropertyChanged
     {
-        get => _quizName;
-        set { _quizName = value; OnPropertyChanged(); }
-    }
+        private string _quizName;
 
-    public ICommand ShowNameCommand { get; }
+        public string QuizName
+        {
+            get => _quizName;
+            set { _quizName = value; OnPropertyChanged(); }
+        }
 
-    public CreateQuiz()
-    {
-        ShowNameCommand = new RelayCommand(ShowName);
-    }
-    private void ShowName()
-    {
-        QuizName = "Nowy Quiz";
-    }
+        public ICommand ShowNameCommand { get; }
 
-    public event PropertyChangedEventHandler PropertyChanged;
-    private void OnPropertyChanged([CallerMemberName] string name = null) =>
-        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+        //public CreateQuiz()
+        //{
+        //    ShowNameCommand = new RelayCommand(ShowName);
+        //}
+        private void ShowName()
+        {
+            QuizName = "Nowy Quiz";
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        private void OnPropertyChanged([CallerMemberName] string name = null) =>
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+    }
 }

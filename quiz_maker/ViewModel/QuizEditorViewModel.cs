@@ -20,18 +20,22 @@ namespace quiz_maker.ViewModel
             {
                 _selectedQuestion = value;
                 OnPropertyChanged(nameof(SelectedQuestion));
+                AddAnswerCommand.NotifyCanExecuteChanged();
             }
         }
 
         public RelayCommand AddQuestionCommand { get; }
         public RelayCommand AddAnswerCommand { get; }
         public RelayCommand SaveToJsonCommand { get; }
+        public RelayCommand BackToMenuCommand { get; }
 
-        public QuizEditorViewModel()
+        public QuizEditorViewModel(Quiz quiz)
         {
+            CurrentQuiz = quiz;
             AddQuestionCommand = new RelayCommand(AddQuestion);
-            AddAnswerCommand = new RelayCommand(AddAnswer, () => SelectedQuestion != null);
+            AddAnswerCommand = new RelayCommand(AddAnswer);
             SaveToJsonCommand = new RelayCommand(SaveToJson);
+            BackToMenuCommand = new RelayCommand(BackToMenu);
         }
 
         private void SaveToJson()
@@ -53,6 +57,10 @@ namespace quiz_maker.ViewModel
                 string json = JsonSerializer.Serialize(CurrentQuiz, options);
                 // File.WriteAllText(dialog.FileName, json);
             }
+        }
+        private void BackToMenu()
+        {
+            MainViewModel.Current.CurrentViewModel = new QuizMenuViewModel();
         }
 
         private void AddQuestion()

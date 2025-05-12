@@ -1,18 +1,43 @@
-﻿using System.Windows.Input;
+﻿using System;
+using System.Windows.Input;
 
 namespace quiz_maker.ViewModel
 {
-    public class RelayCommand(Action execute, Func<bool>? canExecute = null) : ICommand
+    public class RelayCommand : ICommand
     {
-        private readonly Action _execute = execute;
-        private readonly Func<bool>? _canExecute = canExecute;
+        private readonly Action<object?> _execute;
+        private readonly Predicate<object?>? _canExecute;
 
-        public event EventHandler? CanExecuteChanged;
+        public RelayCommand(Action<object?> execute, Predicate<object?>? canExecute = null)
+        {
+            _execute = execute ?? throw new ArgumentNullException(nameof(execute));
+            _canExecute = canExecute;
+        }
 
-        public bool CanExecute(object? parameter) => _canExecute?.Invoke() ?? true;
+        public RelayCommand(Action execute, Func<bool>? canExecute = null)
+        {
+            if (execute == null) throw new ArgumentNullException(nameof(execute));
 
-        public void Execute(object? parameter) => _execute();
+            _execute = _ => execute();
+            _canExecute = canExecute != null ? _ => canExecute() : null;
+        }
 
-        public void RaiseCanExecuteChanged() => CanExecuteChanged?.Invoke(this, EventArgs.Empty);
+        public bool CanExecute(object? parameter) => _canExecute?.Invoke(parameter) ?? true;
+
+        public void Execute(object? parameter) => _execute(parameter);
+
+        public event EventHandler? CanExecuteChanged
+        {
+            add => CommandManager.RequerySuggested += value;
+            remove => CommandManager.RequerySuggested -= value;
+        }
+
+        public void RaiseCanExecuteChanged() =>
+            CommandManager.InvalidateRequerySuggested();
+
+        public void NotifyCanExecuteChanged()
+        {
+            CommandManager.InvalidateRequerySuggested();
+        }
     }
 }

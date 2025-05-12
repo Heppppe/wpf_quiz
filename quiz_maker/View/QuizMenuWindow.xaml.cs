@@ -17,7 +17,7 @@ namespace quiz_maker.View
     /// <summary>
     /// Logika interakcji dla klasy QuizMenuWindow.xaml
     /// </summary>
-    public partial class QuizMenuWindow : Window
+    public partial class QuizMenuWindow : UserControl
     {
         public QuizMenuWindow()
         {
