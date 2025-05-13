@@ -1,18 +1,23 @@
-﻿using MvvmHelpers;
+﻿using System.ComponentModel;
 
-public class Answer : ObservableObject
+public class Answer : INotifyPropertyChanged
 {
-    string _text;
+    private string _text = "";
+    private bool _isCorrect;
+
     public string Text
     {
         get => _text;
-        set => SetProperty(ref _text, value);
+        set { _text = value; OnPropertyChanged(nameof(Text)); }
     }
 
-    bool _isCorrect;
     public bool IsCorrect
     {
         get => _isCorrect;
-        set => SetProperty(ref _isCorrect, value);
+        set { _isCorrect = value; OnPropertyChanged(nameof(IsCorrect)); }
     }
+
+    public event PropertyChangedEventHandler? PropertyChanged;
+    protected void OnPropertyChanged(string propertyName) =>
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 }

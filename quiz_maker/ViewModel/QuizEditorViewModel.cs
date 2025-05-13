@@ -3,12 +3,13 @@ using Microsoft.Win32;
 using System.Text.Json.Serialization;
 using System.Text.Json;
 using MvvmHelpers;
+using System.Reflection.Metadata;
 
 namespace quiz_maker.ViewModel
 {
-    public class QuizEditorViewModel : BaseViewModel
+    public class QuizEditorViewModel : INotifyPropertyChanged
     {
-        new public event PropertyChangedEventHandler? PropertyChanged;
+        public event PropertyChangedEventHandler? PropertyChanged;
 
         public Quiz CurrentQuiz { get; set; } = new() { Title = "Nowy Quiz" };
 
@@ -26,6 +27,7 @@ namespace quiz_maker.ViewModel
 
         public RelayCommand AddQuestionCommand { get; }
         public RelayCommand AddAnswerCommand { get; }
+        public RelayCommand DeleteAnswerCommand { get; }
         public RelayCommand SaveToJsonCommand { get; }
         public RelayCommand BackToMenuCommand { get; }
 
@@ -36,6 +38,7 @@ namespace quiz_maker.ViewModel
             AddAnswerCommand = new RelayCommand(AddAnswer);
             SaveToJsonCommand = new RelayCommand(SaveToJson);
             BackToMenuCommand = new RelayCommand(BackToMenu);
+            DeleteAnswerCommand = new RelayCommand(DeleteAnswer);
         }
 
         private void SaveToJson()
@@ -65,17 +68,25 @@ namespace quiz_maker.ViewModel
 
         private void AddQuestion()
         {
-            var q = new Question { Text = "Nowe pytanie" };
+            var q = new Question { Text = "", Answers = [ new Answer { Text="", IsCorrect=false } ] };
             CurrentQuiz.Questions.Add(q);
             SelectedQuestion = q;
         }
 
         private void AddAnswer()
         {
-            SelectedQuestion?.Answers.Add(new Answer { Text = "Odpowiedź", IsCorrect = false });
+            SelectedQuestion?.Answers.Add(new Answer { Text = "Nowa odpowiedź", IsCorrect = false });
         }
 
-        new private void OnPropertyChanged(string propertyName) =>
+        private void DeleteAnswer(object parameter)
+        {
+            if (parameter is Answer answer)
+            {
+                SelectedQuestion?.Answers?.Remove(answer);
+            }
+        }
+
+        private void OnPropertyChanged(string propertyName) =>
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 
     }

@@ -28,11 +28,13 @@ namespace quiz_maker.ViewModel
         public ICommand EditQuizCommand { get; }
 
         public ICommand CreateNewQuizCommand { get; }
+        public ICommand DeleteQuizCommand { get; }
         public QuizMenuViewModel()
         {
             LoadQuizzes();
             EditQuizCommand = new RelayCommand(EditQuiz, CanEditQuiz);
             CreateNewQuizCommand = new RelayCommand(CreateNewQuiz);
+            DeleteQuizCommand = new RelayCommand(DeleteQuiz);
         }
 
         private void LoadQuizzes()
@@ -76,7 +78,7 @@ namespace quiz_maker.ViewModel
         {
             if (parameter is Quiz quiz)
             {
-                MainViewModel.Current.CurrentViewModel = new QuizEditorViewModel(quiz);
+                Quizzes?.Remove(quiz);
             }
         }
 
