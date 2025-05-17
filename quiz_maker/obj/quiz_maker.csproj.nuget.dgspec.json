@@ -49,6 +49,12 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "Refractored.MvvmHelpers": {
+              "target": "Package",
+              "version": "[1.6.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

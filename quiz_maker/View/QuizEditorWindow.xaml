@@ -1,0 +1,92 @@
+﻿<UserControl x:Class="quiz_maker.View.QuizEditorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:vm="clr-namespace:quiz_maker.ViewModel" >
+
+    <UserControl.Resources>
+        <vm:NullToVisibilityConverter x:Key="NullToVisibilityConverter" />
+    </UserControl.Resources>
+    
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="6*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Grid.Row="0">
+            <TextBlock Text="Nazwa Quizu:" FontWeight="Bold" />
+            <TextBox Text="{Binding CurrentQuiz.Title, UpdateSourceTrigger=PropertyChanged}" />
+        </StackPanel>
+
+        <StackPanel Grid.Column="0" Grid.Row="1">
+            <TextBlock Text="Pytania:" FontWeight="Bold" />
+            <ListBox ItemsSource="{Binding CurrentQuiz.Questions}"
+                    SelectedItem="{Binding SelectedQuestion}" Height="250">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <DockPanel LastChildFill="False" Margin="0,2"
+                                   HorizontalAlignment="Stretch" Width="290" >
+                            <TextBlock DockPanel.Dock="Left"
+                                       Text="{Binding Text, UpdateSourceTrigger=PropertyChanged}" />
+                            <Button DockPanel.Dock="Right"
+                                    Content="Usuń" 
+                                    Command="{Binding DataContext.DeleteQuestionCommand, RelativeSource={RelativeSource AncestorType=UserControl}}" 
+                                    Width="50"
+                                    CommandParameter="{Binding}" />
+                        </DockPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <Button Content="Dodaj Pytanie" Command="{Binding AddQuestionCommand}" Margin="0,10,0,0"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Grid.Row="1" Margin="10,0,0,0"
+                    Visibility="{Binding SelectedQuestion, 
+                    Converter={StaticResource NullToVisibilityConverter}}" >
+            <TextBlock Text="Edytuj pytanie:" FontWeight="Bold" Margin="0,0,0,5"/>
+            <TextBox Text="{Binding SelectedQuestion.Text, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBlock Text="Odpowiedzi:" FontWeight="Bold" Margin="0,10,0,5"/>
+
+            <ListBox ItemsSource="{Binding SelectedQuestion.Answers}"
+                Margin="0,0,0,10">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <DockPanel LastChildFill="True" Margin="0,2">
+                            <TextBox Text="{Binding Text, UpdateSourceTrigger=PropertyChanged}" 
+                                     VerticalAlignment="Center"
+                                     Width='200' />
+                            <CheckBox Content="poprawne" 
+                                      IsChecked="{Binding IsCorrect, UpdateSourceTrigger=PropertyChanged}" 
+                                      VerticalAlignment="Center"
+                                      Margin="20,2,20,2" />
+                            <Button Content="Usuń" 
+                                    Command="{Binding DataContext.DeleteAnswerCommand, RelativeSource={RelativeSource AncestorType=UserControl}}" 
+                                    Width="50"
+                                    CommandParameter="{Binding}" />
+                        </DockPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <Button Content="Dodaj odpowiedź"
+            Command="{Binding AddAnswerCommand}" />
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,10,0">
+            <Button Content="⬅️ Odrzuć zmiany"
+            Command="{Binding BackToMenuCommand}"
+            Height="40"
+            Width="130"
+            Margin="0,0,10,0" />
+
+            <Button Content="Zapisz"
+            Command="{Binding SaveToJsonCommand}"
+            Height="40"
+            Width="80" />
+        </StackPanel>
+    </Grid>
+</UserControl>
