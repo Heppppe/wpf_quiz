@@ -4,6 +4,10 @@ using System.Text.Json.Serialization;
 using System.Text.Json;
 using MvvmHelpers;
 using System.Reflection.Metadata;
+using System.IO;
+using System.Windows.Controls;
+using System.Windows;
+using System;
 
 namespace quiz_maker.ViewModel
 {
@@ -30,6 +34,7 @@ namespace quiz_maker.ViewModel
         public RelayCommand DeleteAnswerCommand { get; }
         public RelayCommand SaveToJsonCommand { get; }
         public RelayCommand BackToMenuCommand { get; }
+        public RelayCommand DeleteQuestionCommand {  get; }
 
         public QuizEditorViewModel(Quiz quiz)
         {
@@ -39,26 +44,46 @@ namespace quiz_maker.ViewModel
             SaveToJsonCommand = new RelayCommand(SaveToJson);
             BackToMenuCommand = new RelayCommand(BackToMenu);
             DeleteAnswerCommand = new RelayCommand(DeleteAnswer);
+            DeleteQuestionCommand = new RelayCommand(DeleteQuestion);
         }
 
         private void SaveToJson()
         {
-            var dialog = new SaveFileDialog
+            string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
+            string saveDirectory = Path.Combine(baseDirectory, "../../../../savedQuizes");
+
+            Directory.CreateDirectory(saveDirectory);
+
+            string fileName = $"{CurrentQuiz.Title}.json";
+            string fullPath = Path.Combine(saveDirectory, fileName);
+
+            var options = new JsonSerializerOptions
             {
-                Filter = "JSON files (*.json)|*.json",
-                FileName = $"{CurrentQuiz.Title}.json"
+                WriteIndented = true,
+                DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
             };
 
-            if (dialog.ShowDialog() == true)
-            {
-                var options = new JsonSerializerOptions
-                {
-                    WriteIndented = true,
-                    DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
-                };
+            string json = JsonSerializer.Serialize(CurrentQuiz, options);
+            File.WriteAllText(fullPath, json);
 
-                string json = JsonSerializer.Serialize(CurrentQuiz, options);
-                // File.WriteAllText(dialog.FileName, json);
+            ShowSaveMessage();
+        }
+        private void ShowSaveMessage()
+        {
+            string messageBoxText = "Zapisano pomyślnie! Czy chcesz kontynuować edytowanie quizu?";
+            string caption = "Stan zapisu";
+            MessageBoxButton button = MessageBoxButton.YesNo;
+            MessageBoxImage icon = MessageBoxImage.Asterisk;
+            MessageBoxResult result;
+            result = MessageBox.Show(messageBoxText, caption, button, icon, MessageBoxResult.Yes);
+
+            switch (result)
+            {
+                case MessageBoxResult.Yes:
+                    break;
+                case MessageBoxResult.No:
+                    BackToMenu();
+                    break;
             }
         }
         private void BackToMenu()
@@ -71,6 +96,13 @@ namespace quiz_maker.ViewModel
             var q = new Question { Text = "", Answers = [ new Answer { Text="", IsCorrect=false } ] };
             CurrentQuiz.Questions.Add(q);
             SelectedQuestion = q;
+        }
+        private void DeleteQuestion(object parameter)
+        {
+            if (parameter is Question question)
+            {
+                CurrentQuiz.Questions.Remove(question);
+            }
         }
 
         private void AddAnswer()

@@ -39,7 +39,7 @@ namespace quiz_maker.ViewModel
 
         private void LoadQuizzes()
         {
-            var folderPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "savedQuizes");
+            var folderPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "../../../../savedQuizes");
 
             if (!Directory.Exists(folderPath))
             {
@@ -79,6 +79,37 @@ namespace quiz_maker.ViewModel
             if (parameter is Quiz quiz)
             {
                 Quizzes?.Remove(quiz);
+
+                try
+                {
+                    var basePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "../../../../savedQuizes");
+                    var deletedPath = Path.Combine(basePath, "deletedQuizes");
+
+                    if (!Directory.Exists(deletedPath))
+                    {
+                        Directory.CreateDirectory(deletedPath);
+                    }
+
+                    // Determine the quiz file path
+                    // Assuming the file is named after the quiz title (sanitize it for safety)
+                    string safeTitle = string.Concat(quiz.Title.Split(Path.GetInvalidFileNameChars()));
+                    string sourceFile = Path.Combine(basePath, $"{safeTitle}.json");
+                    string destFile = Path.Combine(deletedPath, $"{safeTitle}.json");
+
+                    if (File.Exists(sourceFile))
+                    {
+                        File.Move(sourceFile, destFile);
+                        System.Diagnostics.Debug.WriteLine($"[INFO] Moved quiz file to deletedQuizes: {quiz.Title}");
+                    }
+                    else
+                    {
+                        System.Diagnostics.Debug.WriteLine($"[WARNING] Quiz file not found: {sourceFile}");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    System.Diagnostics.Debug.WriteLine($"[ERROR] Failed to move quiz file: {ex.Message}");
+                }
             }
         }
 

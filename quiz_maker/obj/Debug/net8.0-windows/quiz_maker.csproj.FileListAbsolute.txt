@@ -3,11 +3,9 @@ C:\Users\mati1\Desktop\studia\sem4\Programowanie\quiz\quiz_maker\bin\Debug\net8.
 C:\Users\mati1\Desktop\studia\sem4\Programowanie\quiz\quiz_maker\bin\Debug\net8.0-windows\quiz_maker.runtimeconfig.json
 C:\Users\mati1\Desktop\studia\sem4\Programowanie\quiz\quiz_maker\bin\Debug\net8.0-windows\quiz_maker.dll
 C:\Users\mati1\Desktop\studia\sem4\Programowanie\quiz\quiz_maker\bin\Debug\net8.0-windows\quiz_maker.pdb
-C:\Users\mati1\Desktop\studia\sem4\Programowanie\quiz\quiz_maker\obj\Debug\net8.0-windows\MainWindow.g.cs
 C:\Users\mati1\Desktop\studia\sem4\Programowanie\quiz\quiz_maker\obj\Debug\net8.0-windows\App.g.cs
 C:\Users\mati1\Desktop\studia\sem4\Programowanie\quiz\quiz_maker\obj\Debug\net8.0-windows\quiz_maker_MarkupCompile.cache
 C:\Users\mati1\Desktop\studia\sem4\Programowanie\quiz\quiz_maker\obj\Debug\net8.0-windows\quiz_maker_MarkupCompile.lref
-C:\Users\mati1\Desktop\studia\sem4\Programowanie\quiz\quiz_maker\obj\Debug\net8.0-windows\MainWindow.baml
 C:\Users\mati1\Desktop\studia\sem4\Programowanie\quiz\quiz_maker\obj\Debug\net8.0-windows\quiz_maker.g.resources
 C:\Users\mati1\Desktop\studia\sem4\Programowanie\quiz\quiz_maker\obj\Debug\net8.0-windows\quiz_maker.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\mati1\Desktop\studia\sem4\Programowanie\quiz\quiz_maker\obj\Debug\net8.0-windows\quiz_maker.AssemblyInfoInputs.cache
@@ -71,3 +69,11 @@ C:\Users\SQ205\Desktop\inne\programowanie\quiz\quiz_maker\obj\Debug\net8.0-windo
 C:\Users\SQ205\Desktop\inne\programowanie\quiz\quiz_maker\obj\Debug\net8.0-windows\quiz_maker.csproj.Up2Date
 C:\Users\SQ205\Desktop\inne\programowanie\quiz\quiz_maker\obj\Debug\net8.0-windows\quiz_maker.genruntimeconfig.cache
 C:\Users\SQ205\Desktop\inne\programowanie\quiz\quiz_maker\obj\Debug\net8.0-windows\ref\quiz_maker.dll
+C:\Users\mati1\Desktop\studia\sem4\Programowanie\quiz\quiz_maker\bin\Debug\net8.0-windows\MvvmHelpers.dll
+C:\Users\mati1\Desktop\studia\sem4\Programowanie\quiz\quiz_maker\obj\Debug\net8.0-windows\quiz_maker.csproj.AssemblyReference.cache
+C:\Users\mati1\Desktop\studia\sem4\Programowanie\quiz\quiz_maker\obj\Debug\net8.0-windows\View\QuizMenuWindow.baml
+C:\Users\mati1\Desktop\studia\sem4\Programowanie\quiz\quiz_maker\obj\Debug\net8.0-windows\View\MainWindow.g.cs
+C:\Users\mati1\Desktop\studia\sem4\Programowanie\quiz\quiz_maker\obj\Debug\net8.0-windows\View\QuizMenuWindow.g.cs
+C:\Users\mati1\Desktop\studia\sem4\Programowanie\quiz\quiz_maker\obj\Debug\net8.0-windows\View\MainWindow.baml
+C:\Users\mati1\Desktop\studia\sem4\Programowanie\quiz\quiz_maker\obj\Debug\net8.0-windows\View\QuizEditorWindow.baml
+C:\Users\mati1\Desktop\studia\sem4\Programowanie\quiz\quiz_maker\obj\Debug\net8.0-windows\quiz_maker.csproj.Up2Date

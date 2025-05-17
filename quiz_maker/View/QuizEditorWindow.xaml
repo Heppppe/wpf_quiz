@@ -30,7 +30,16 @@
                     SelectedItem="{Binding SelectedQuestion}" Height="250">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <TextBlock Text="{Binding Text, UpdateSourceTrigger=PropertyChanged}" />
+                        <DockPanel LastChildFill="False" Margin="0,2"
+                                   HorizontalAlignment="Stretch" Width="290" >
+                            <TextBlock DockPanel.Dock="Left"
+                                       Text="{Binding Text, UpdateSourceTrigger=PropertyChanged}" />
+                            <Button DockPanel.Dock="Right"
+                                    Content="Usuń" 
+                                    Command="{Binding DataContext.DeleteQuestionCommand, RelativeSource={RelativeSource AncestorType=UserControl}}" 
+                                    Width="50"
+                                    CommandParameter="{Binding}" />
+                        </DockPanel>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>

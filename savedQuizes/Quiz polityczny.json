@@ -1,0 +1,27 @@
+{
+  "_title": "Quiz polityczny",
+  "Title": "Quiz polityczny",
+  "Questions": [
+    {
+      "Text": "Na kogo g\u0142osujesz?",
+      "Answers": [
+        {
+          "Text": "Biejat Magdalena",
+          "IsCorrect": true
+        },
+        {
+          "Text": "Grzegorz Braun",
+          "IsCorrect": true
+        },
+        {
+          "Text": "Ho\u0142ownia Szymon",
+          "IsCorrect": true
+        },
+        {
+          "Text": "Mentzen S\u0142awomir",
+          "IsCorrect": true
+        }
+      ]
+    }
+  ]
+}
