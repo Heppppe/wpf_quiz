@@ -90,9 +90,9 @@
               "Title": "QuizEditorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\mati1\\Desktop\\studia\\sem4\\Programowanie\\quiz\\quiz_maker\\ViewModel\\QuizEditorViewModel.cs",
               "RelativeDocumentMoniker": "ViewModel\\QuizEditorViewModel.cs",
-              "ToolTip": "C:\\Users\\mati1\\Desktop\\studia\\sem4\\Programowanie\\quiz\\quiz_maker\\ViewModel\\QuizEditorViewModel.cs*",
-              "RelativeToolTip": "ViewModel\\QuizEditorViewModel.cs*",
-              "ViewState": "AgIAACMAAAAAAAAAAAA6wCcAAAAJAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\mati1\\Desktop\\studia\\sem4\\Programowanie\\quiz\\quiz_maker\\ViewModel\\QuizEditorViewModel.cs",
+              "RelativeToolTip": "ViewModel\\QuizEditorViewModel.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAwwFgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-08T16:36:20.164Z",
               "EditorCaption": ""
@@ -119,8 +119,7 @@
               "RelativeToolTip": "View\\QuizEditorWindow.xaml.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T10:19:56.121Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T10:19:56.121Z"
             },
             {
               "$type": "Document",
@@ -131,8 +130,7 @@
               "ToolTip": "C:\\Users\\mati1\\Desktop\\studia\\sem4\\Programowanie\\quiz\\quiz_maker\\View\\QuizEditorWindow.xaml",
               "RelativeToolTip": "View\\QuizEditorWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-08T16:17:38.047Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-08T16:17:38.047Z"
             },
             {
               "$type": "Document",
@@ -140,9 +138,9 @@
               "Title": "QuizMenuViewModel.cs",
               "DocumentMoniker": "C:\\Users\\mati1\\Desktop\\studia\\sem4\\Programowanie\\quiz\\quiz_maker\\ViewModel\\QuizMenuViewModel.cs",
               "RelativeDocumentMoniker": "ViewModel\\QuizMenuViewModel.cs",
-              "ToolTip": "C:\\Users\\mati1\\Desktop\\studia\\sem4\\Programowanie\\quiz\\quiz_maker\\ViewModel\\QuizMenuViewModel.cs*",
-              "RelativeToolTip": "ViewModel\\QuizMenuViewModel.cs*",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAwwFIAAAATAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\mati1\\Desktop\\studia\\sem4\\Programowanie\\quiz\\quiz_maker\\ViewModel\\QuizMenuViewModel.cs",
+              "RelativeToolTip": "ViewModel\\QuizMenuViewModel.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAqwCUAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-08T16:23:24.082Z",
               "EditorCaption": ""
@@ -168,8 +166,7 @@
               "ToolTip": "C:\\Users\\mati1\\Desktop\\studia\\sem4\\Programowanie\\quiz\\quiz_maker\\View\\QuizMenuWindow.xaml",
               "RelativeToolTip": "View\\QuizMenuWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-08T16:33:28.04Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-08T16:33:28.04Z"
             },
             {
               "$type": "Document",
@@ -193,8 +190,7 @@
               "RelativeToolTip": "ViewModel\\RelayCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T16:32:19.414Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-04T16:32:19.414Z"
             },
             {
               "$type": "Document",
@@ -240,8 +236,7 @@
               "ToolTip": "C:\\Users\\mati1\\Desktop\\studia\\sem4\\Programowanie\\quiz\\quiz_maker\\App.xaml",
               "RelativeToolTip": "App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-08T16:08:54.365Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-08T16:08:54.365Z"
             },
             {
               "$type": "Document",

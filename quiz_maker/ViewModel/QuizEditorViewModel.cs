@@ -8,6 +8,8 @@ using System.IO;
 using System.Windows.Controls;
 using System.Windows;
 using System;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace quiz_maker.ViewModel
 {
@@ -64,9 +66,29 @@ namespace quiz_maker.ViewModel
             };
 
             string json = JsonSerializer.Serialize(CurrentQuiz, options);
-            File.WriteAllText(fullPath, json);
 
+            byte[] encryptedData = EncryptStringToBytes_Aes(json, aesKey, aesIV);
+            File.WriteAllBytes(fullPath, encryptedData);
             ShowSaveMessage();
+        }
+
+        private static readonly byte[] aesKey = Encoding.UTF8.GetBytes("0123456789ABCDEF0123456789ABCDEF");
+        private static readonly byte[] aesIV = Encoding.UTF8.GetBytes("ABCDEF0123456789");
+
+        private static byte[] EncryptStringToBytes_Aes(string plainText, byte[] Key, byte[] IV)
+        {
+            using Aes aesAlg = Aes.Create();
+            aesAlg.Key = Key;
+            aesAlg.IV = IV;
+
+            using MemoryStream msEncrypt = new();
+            using CryptoStream csEncrypt = new(msEncrypt, aesAlg.CreateEncryptor(), CryptoStreamMode.Write);
+            using (StreamWriter swEncrypt = new(csEncrypt))
+            {
+                swEncrypt.Write(plainText);
+            }
+
+            return msEncrypt.ToArray();
         }
         private void ShowSaveMessage()
         {

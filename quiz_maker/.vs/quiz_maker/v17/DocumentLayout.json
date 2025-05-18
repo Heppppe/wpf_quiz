@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\mati1\\Desktop\\studia\\sem4\\Programowanie\\quiz\\quiz_maker\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0ED6CDB2-815D-4576-BDA4-F02FB1FDE817}|quiz_maker.csproj|c:\\users\\mati1\\desktop\\studia\\sem4\\programowanie\\quiz\\quiz_maker\\viewmodel\\quizeditorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0ED6CDB2-815D-4576-BDA4-F02FB1FDE817}|quiz_maker.csproj|solutionrelative:viewmodel\\quizeditorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0ED6CDB2-815D-4576-BDA4-F02FB1FDE817}|quiz_maker.csproj|c:\\users\\mati1\\desktop\\studia\\sem4\\programowanie\\quiz\\quiz_maker\\viewmodel\\quizmenuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0ED6CDB2-815D-4576-BDA4-F02FB1FDE817}|quiz_maker.csproj|solutionrelative:viewmodel\\quizmenuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ED6CDB2-815D-4576-BDA4-F02FB1FDE817}|quiz_maker.csproj|c:\\users\\mati1\\desktop\\studia\\sem4\\programowanie\\quiz\\quiz_maker\\viewmodel\\quizeditorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0ED6CDB2-815D-4576-BDA4-F02FB1FDE817}|quiz_maker.csproj|solutionrelative:viewmodel\\quizeditorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0ED6CDB2-815D-4576-BDA4-F02FB1FDE817}|quiz_maker.csproj|c:\\users\\mati1\\desktop\\studia\\sem4\\programowanie\\quiz\\quiz_maker\\view\\quizmenuwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -82,17 +82,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "QuizEditorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\mati1\\Desktop\\studia\\sem4\\Programowanie\\quiz\\quiz_maker\\ViewModel\\QuizEditorViewModel.cs",
               "RelativeDocumentMoniker": "ViewModel\\QuizEditorViewModel.cs",
               "ToolTip": "C:\\Users\\mati1\\Desktop\\studia\\sem4\\Programowanie\\quiz\\quiz_maker\\ViewModel\\QuizEditorViewModel.cs",
               "RelativeToolTip": "ViewModel\\QuizEditorViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAwwEwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-08T16:36:20.164Z",
               "EditorCaption": ""
@@ -119,8 +119,7 @@
               "RelativeToolTip": "View\\QuizEditorWindow.xaml.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T10:19:56.121Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T10:19:56.121Z"
             },
             {
               "$type": "Document",
@@ -131,18 +130,17 @@
               "ToolTip": "C:\\Users\\mati1\\Desktop\\studia\\sem4\\Programowanie\\quiz\\quiz_maker\\View\\QuizEditorWindow.xaml",
               "RelativeToolTip": "View\\QuizEditorWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-08T16:17:38.047Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-08T16:17:38.047Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "QuizMenuViewModel.cs",
               "DocumentMoniker": "C:\\Users\\mati1\\Desktop\\studia\\sem4\\Programowanie\\quiz\\quiz_maker\\ViewModel\\QuizMenuViewModel.cs",
               "RelativeDocumentMoniker": "ViewModel\\QuizMenuViewModel.cs",
               "ToolTip": "C:\\Users\\mati1\\Desktop\\studia\\sem4\\Programowanie\\quiz\\quiz_maker\\ViewModel\\QuizMenuViewModel.cs",
               "RelativeToolTip": "ViewModel\\QuizMenuViewModel.cs",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAwwFIAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAqwCsAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-08T16:23:24.082Z",
               "EditorCaption": ""
@@ -168,8 +166,7 @@
               "ToolTip": "C:\\Users\\mati1\\Desktop\\studia\\sem4\\Programowanie\\quiz\\quiz_maker\\View\\QuizMenuWindow.xaml",
               "RelativeToolTip": "View\\QuizMenuWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-08T16:33:28.04Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-08T16:33:28.04Z"
             },
             {
               "$type": "Document",
@@ -193,8 +190,7 @@
               "RelativeToolTip": "ViewModel\\RelayCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T16:32:19.414Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-04T16:32:19.414Z"
             },
             {
               "$type": "Document",
@@ -240,8 +236,7 @@
               "ToolTip": "C:\\Users\\mati1\\Desktop\\studia\\sem4\\Programowanie\\quiz\\quiz_maker\\App.xaml",
               "RelativeToolTip": "App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-08T16:08:54.365Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-08T16:08:54.365Z"
             },
             {
               "$type": "Document",
