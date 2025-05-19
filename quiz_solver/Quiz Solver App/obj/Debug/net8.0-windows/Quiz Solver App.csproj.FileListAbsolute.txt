@@ -1,0 +1,91 @@
+C:\Users\taran\source\repos\Quiz Solver App\Quiz Solver App\bin\Debug\net8.0-windows\Quiz Solver App.exe
+C:\Users\taran\source\repos\Quiz Solver App\Quiz Solver App\bin\Debug\net8.0-windows\Quiz Solver App.deps.json
+C:\Users\taran\source\repos\Quiz Solver App\Quiz Solver App\bin\Debug\net8.0-windows\Quiz Solver App.runtimeconfig.json
+C:\Users\taran\source\repos\Quiz Solver App\Quiz Solver App\bin\Debug\net8.0-windows\Quiz Solver App.dll
+C:\Users\taran\source\repos\Quiz Solver App\Quiz Solver App\bin\Debug\net8.0-windows\Quiz Solver App.pdb
+C:\Users\taran\source\repos\Quiz Solver App\Quiz Solver App\bin\Debug\net8.0-windows\Microsoft.Expression.Interactions.dll
+C:\Users\taran\source\repos\Quiz Solver App\Quiz Solver App\bin\Debug\net8.0-windows\System.Windows.Interactivity.dll
+C:\Users\taran\source\repos\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\Quiz Solver App.csproj.AssemblyReference.cache
+C:\Users\taran\source\repos\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\View\MainMenu.g.cs
+C:\Users\taran\source\repos\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\View\MainWindow.g.cs
+C:\Users\taran\source\repos\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\View\QuizSolver.g.cs
+C:\Users\taran\source\repos\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\taran\source\repos\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\taran\source\repos\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\Quiz Solver App_MarkupCompile.cache
+C:\Users\taran\source\repos\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\Quiz Solver App_MarkupCompile.lref
+C:\Users\taran\source\repos\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\App.baml
+C:\Users\taran\source\repos\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\View\MainMenu.baml
+C:\Users\taran\source\repos\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\View\MainWindow.baml
+C:\Users\taran\source\repos\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\View\QuizSolver.baml
+C:\Users\taran\source\repos\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\Quiz Solver App.g.resources
+C:\Users\taran\source\repos\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\Quiz Solver App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\taran\source\repos\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\Quiz Solver App.AssemblyInfoInputs.cache
+C:\Users\taran\source\repos\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\Quiz Solver App.AssemblyInfo.cs
+C:\Users\taran\source\repos\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\Quiz Solver App.csproj.CoreCompileInputs.cache
+C:\Users\taran\source\repos\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\Quiz Sol.3AE04727.Up2Date
+C:\Users\taran\source\repos\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\Quiz Solver App.dll
+C:\Users\taran\source\repos\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\refint\Quiz Solver App.dll
+C:\Users\taran\source\repos\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\Quiz Solver App.pdb
+C:\Users\taran\source\repos\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\Quiz Solver App.genruntimeconfig.cache
+C:\Users\taran\source\repos\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\ref\Quiz Solver App.dll
+C:\Users\Kacper\Downloads\Quiz Solver App\Quiz Solver App\Quiz Solver App\bin\Debug\net8.0-windows\Quiz Solver App.exe
+C:\Users\Kacper\Downloads\Quiz Solver App\Quiz Solver App\Quiz Solver App\bin\Debug\net8.0-windows\Quiz Solver App.deps.json
+C:\Users\Kacper\Downloads\Quiz Solver App\Quiz Solver App\Quiz Solver App\bin\Debug\net8.0-windows\Quiz Solver App.runtimeconfig.json
+C:\Users\Kacper\Downloads\Quiz Solver App\Quiz Solver App\Quiz Solver App\bin\Debug\net8.0-windows\Quiz Solver App.dll
+C:\Users\Kacper\Downloads\Quiz Solver App\Quiz Solver App\Quiz Solver App\bin\Debug\net8.0-windows\Quiz Solver App.pdb
+C:\Users\Kacper\Downloads\Quiz Solver App\Quiz Solver App\Quiz Solver App\bin\Debug\net8.0-windows\Microsoft.Expression.Interactions.dll
+C:\Users\Kacper\Downloads\Quiz Solver App\Quiz Solver App\Quiz Solver App\bin\Debug\net8.0-windows\System.Windows.Interactivity.dll
+C:\Users\Kacper\Downloads\Quiz Solver App\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\Quiz Solver App.csproj.AssemblyReference.cache
+C:\Users\Kacper\Downloads\Quiz Solver App\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\View\QuizSolver.baml
+C:\Users\Kacper\Downloads\Quiz Solver App\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\View\MainMenu.g.cs
+C:\Users\Kacper\Downloads\Quiz Solver App\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\View\MainWindow.g.cs
+C:\Users\Kacper\Downloads\Quiz Solver App\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\View\QuizSolver.g.cs
+C:\Users\Kacper\Downloads\Quiz Solver App\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Kacper\Downloads\Quiz Solver App\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Kacper\Downloads\Quiz Solver App\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\Quiz Solver App_MarkupCompile.cache
+C:\Users\Kacper\Downloads\Quiz Solver App\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\Quiz Solver App_MarkupCompile.lref
+C:\Users\Kacper\Downloads\Quiz Solver App\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\App.baml
+C:\Users\Kacper\Downloads\Quiz Solver App\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\View\MainMenu.baml
+C:\Users\Kacper\Downloads\Quiz Solver App\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\View\MainWindow.baml
+C:\Users\Kacper\Downloads\Quiz Solver App\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\Quiz Solver App.g.resources
+C:\Users\Kacper\Downloads\Quiz Solver App\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\Quiz Solver App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kacper\Downloads\Quiz Solver App\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\Quiz Solver App.AssemblyInfoInputs.cache
+C:\Users\Kacper\Downloads\Quiz Solver App\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\Quiz Solver App.AssemblyInfo.cs
+C:\Users\Kacper\Downloads\Quiz Solver App\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\Quiz Solver App.csproj.CoreCompileInputs.cache
+C:\Users\Kacper\Downloads\Quiz Solver App\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\Quiz Sol.3AE04727.Up2Date
+C:\Users\Kacper\Downloads\Quiz Solver App\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\Quiz Solver App.dll
+C:\Users\Kacper\Downloads\Quiz Solver App\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\refint\Quiz Solver App.dll
+C:\Users\Kacper\Downloads\Quiz Solver App\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\Quiz Solver App.pdb
+C:\Users\Kacper\Downloads\Quiz Solver App\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\Quiz Solver App.genruntimeconfig.cache
+C:\Users\Kacper\Downloads\Quiz Solver App\Quiz Solver App\Quiz Solver App\obj\Debug\net8.0-windows\ref\Quiz Solver App.dll
+C:\Users\Kacper\Studia\s_4\Programowanie obiektowe i graficzne\Projekt_wersja_wlasciwa\quiz_solver\Quiz Solver App\bin\Debug\net8.0-windows\Quiz Solver App.exe
+C:\Users\Kacper\Studia\s_4\Programowanie obiektowe i graficzne\Projekt_wersja_wlasciwa\quiz_solver\Quiz Solver App\bin\Debug\net8.0-windows\Quiz Solver App.deps.json
+C:\Users\Kacper\Studia\s_4\Programowanie obiektowe i graficzne\Projekt_wersja_wlasciwa\quiz_solver\Quiz Solver App\bin\Debug\net8.0-windows\Quiz Solver App.runtimeconfig.json
+C:\Users\Kacper\Studia\s_4\Programowanie obiektowe i graficzne\Projekt_wersja_wlasciwa\quiz_solver\Quiz Solver App\bin\Debug\net8.0-windows\Quiz Solver App.dll
+C:\Users\Kacper\Studia\s_4\Programowanie obiektowe i graficzne\Projekt_wersja_wlasciwa\quiz_solver\Quiz Solver App\bin\Debug\net8.0-windows\Quiz Solver App.pdb
+C:\Users\Kacper\Studia\s_4\Programowanie obiektowe i graficzne\Projekt_wersja_wlasciwa\quiz_solver\Quiz Solver App\bin\Debug\net8.0-windows\Microsoft.Expression.Interactions.dll
+C:\Users\Kacper\Studia\s_4\Programowanie obiektowe i graficzne\Projekt_wersja_wlasciwa\quiz_solver\Quiz Solver App\bin\Debug\net8.0-windows\System.Windows.Interactivity.dll
+C:\Users\Kacper\Studia\s_4\Programowanie obiektowe i graficzne\Projekt_wersja_wlasciwa\quiz_solver\Quiz Solver App\obj\Debug\net8.0-windows\Quiz Solver App.csproj.AssemblyReference.cache
+C:\Users\Kacper\Studia\s_4\Programowanie obiektowe i graficzne\Projekt_wersja_wlasciwa\quiz_solver\Quiz Solver App\obj\Debug\net8.0-windows\View\QuizSolver.baml
+C:\Users\Kacper\Studia\s_4\Programowanie obiektowe i graficzne\Projekt_wersja_wlasciwa\quiz_solver\Quiz Solver App\obj\Debug\net8.0-windows\View\MainMenu.g.cs
+C:\Users\Kacper\Studia\s_4\Programowanie obiektowe i graficzne\Projekt_wersja_wlasciwa\quiz_solver\Quiz Solver App\obj\Debug\net8.0-windows\View\MainWindow.g.cs
+C:\Users\Kacper\Studia\s_4\Programowanie obiektowe i graficzne\Projekt_wersja_wlasciwa\quiz_solver\Quiz Solver App\obj\Debug\net8.0-windows\View\QuizSolver.g.cs
+C:\Users\Kacper\Studia\s_4\Programowanie obiektowe i graficzne\Projekt_wersja_wlasciwa\quiz_solver\Quiz Solver App\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Kacper\Studia\s_4\Programowanie obiektowe i graficzne\Projekt_wersja_wlasciwa\quiz_solver\Quiz Solver App\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Kacper\Studia\s_4\Programowanie obiektowe i graficzne\Projekt_wersja_wlasciwa\quiz_solver\Quiz Solver App\obj\Debug\net8.0-windows\Quiz Solver App_MarkupCompile.cache
+C:\Users\Kacper\Studia\s_4\Programowanie obiektowe i graficzne\Projekt_wersja_wlasciwa\quiz_solver\Quiz Solver App\obj\Debug\net8.0-windows\Quiz Solver App_MarkupCompile.lref
+C:\Users\Kacper\Studia\s_4\Programowanie obiektowe i graficzne\Projekt_wersja_wlasciwa\quiz_solver\Quiz Solver App\obj\Debug\net8.0-windows\App.baml
+C:\Users\Kacper\Studia\s_4\Programowanie obiektowe i graficzne\Projekt_wersja_wlasciwa\quiz_solver\Quiz Solver App\obj\Debug\net8.0-windows\View\MainMenu.baml
+C:\Users\Kacper\Studia\s_4\Programowanie obiektowe i graficzne\Projekt_wersja_wlasciwa\quiz_solver\Quiz Solver App\obj\Debug\net8.0-windows\View\MainWindow.baml
+C:\Users\Kacper\Studia\s_4\Programowanie obiektowe i graficzne\Projekt_wersja_wlasciwa\quiz_solver\Quiz Solver App\obj\Debug\net8.0-windows\Quiz Solver App.g.resources
+C:\Users\Kacper\Studia\s_4\Programowanie obiektowe i graficzne\Projekt_wersja_wlasciwa\quiz_solver\Quiz Solver App\obj\Debug\net8.0-windows\Quiz Solver App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kacper\Studia\s_4\Programowanie obiektowe i graficzne\Projekt_wersja_wlasciwa\quiz_solver\Quiz Solver App\obj\Debug\net8.0-windows\Quiz Solver App.AssemblyInfoInputs.cache
+C:\Users\Kacper\Studia\s_4\Programowanie obiektowe i graficzne\Projekt_wersja_wlasciwa\quiz_solver\Quiz Solver App\obj\Debug\net8.0-windows\Quiz Solver App.AssemblyInfo.cs
+C:\Users\Kacper\Studia\s_4\Programowanie obiektowe i graficzne\Projekt_wersja_wlasciwa\quiz_solver\Quiz Solver App\obj\Debug\net8.0-windows\Quiz Solver App.csproj.CoreCompileInputs.cache
+C:\Users\Kacper\Studia\s_4\Programowanie obiektowe i graficzne\Projekt_wersja_wlasciwa\quiz_solver\Quiz Solver App\obj\Debug\net8.0-windows\Quiz Solver App.sourcelink.json
+C:\Users\Kacper\Studia\s_4\Programowanie obiektowe i graficzne\Projekt_wersja_wlasciwa\quiz_solver\Quiz Solver App\obj\Debug\net8.0-windows\Quiz Sol.3AE04727.Up2Date
+C:\Users\Kacper\Studia\s_4\Programowanie obiektowe i graficzne\Projekt_wersja_wlasciwa\quiz_solver\Quiz Solver App\obj\Debug\net8.0-windows\Quiz Solver App.dll
+C:\Users\Kacper\Studia\s_4\Programowanie obiektowe i graficzne\Projekt_wersja_wlasciwa\quiz_solver\Quiz Solver App\obj\Debug\net8.0-windows\refint\Quiz Solver App.dll
+C:\Users\Kacper\Studia\s_4\Programowanie obiektowe i graficzne\Projekt_wersja_wlasciwa\quiz_solver\Quiz Solver App\obj\Debug\net8.0-windows\Quiz Solver App.pdb
+C:\Users\Kacper\Studia\s_4\Programowanie obiektowe i graficzne\Projekt_wersja_wlasciwa\quiz_solver\Quiz Solver App\obj\Debug\net8.0-windows\Quiz Solver App.genruntimeconfig.cache
+C:\Users\Kacper\Studia\s_4\Programowanie obiektowe i graficzne\Projekt_wersja_wlasciwa\quiz_solver\Quiz Solver App\obj\Debug\net8.0-windows\ref\Quiz Solver App.dll
