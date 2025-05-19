@@ -129,7 +129,18 @@ namespace quiz_maker.ViewModel
 
         private void AddAnswer()
         {
-            SelectedQuestion?.Answers.Add(new Answer { Text = "Nowa odpowiedź", IsCorrect = false });
+            if (SelectedQuestion?.Answers.Count >= 4)
+            {
+                string messageBoxText = "Pytanie nie może mieć więcej niż 4 odpowiedzi";
+                string caption = "Limit odpowiedzi";
+                MessageBoxButton button = MessageBoxButton.OK;
+                MessageBoxImage icon = MessageBoxImage.Stop;
+                MessageBox.Show(messageBoxText, caption, button, icon, MessageBoxResult.Yes);
+            }
+            else
+            {
+                SelectedQuestion?.Answers.Add(new Answer { Text = "Nowa odpowiedź", IsCorrect = false });
+            }
         }
 
         private void DeleteAnswer(object parameter)

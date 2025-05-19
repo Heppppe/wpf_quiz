@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mati1\\Desktop\\studia\\sem4\\Programowanie\\quiz\\quiz_maker\\quiz_maker.csproj": {}
+    "C:\\Users\\SQ205\\Desktop\\inne\\programowanie\\quiz\\quiz_maker\\quiz_maker.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mati1\\Desktop\\studia\\sem4\\Programowanie\\quiz\\quiz_maker\\quiz_maker.csproj": {
+    "C:\\Users\\SQ205\\Desktop\\inne\\programowanie\\quiz\\quiz_maker\\quiz_maker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mati1\\Desktop\\studia\\sem4\\Programowanie\\quiz\\quiz_maker\\quiz_maker.csproj",
+        "projectUniqueName": "C:\\Users\\SQ205\\Desktop\\inne\\programowanie\\quiz\\quiz_maker\\quiz_maker.csproj",
         "projectName": "quiz_maker",
-        "projectPath": "C:\\Users\\mati1\\Desktop\\studia\\sem4\\Programowanie\\quiz\\quiz_maker\\quiz_maker.csproj",
-        "packagesPath": "C:\\Users\\mati1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mati1\\Desktop\\studia\\sem4\\Programowanie\\quiz\\quiz_maker\\obj\\",
+        "projectPath": "C:\\Users\\SQ205\\Desktop\\inne\\programowanie\\quiz\\quiz_maker\\quiz_maker.csproj",
+        "packagesPath": "C:\\Users\\SQ205\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SQ205\\Desktop\\inne\\programowanie\\quiz\\quiz_maker\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\mati1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\SQ205\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
