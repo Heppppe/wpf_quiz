@@ -61,10 +61,10 @@ namespace Quiz_Solver_App.ViewModel
         {
             // Przykładowe dane
             QuestionText = "Przykładowe pytanie?";
-            Answers.Add("Odpowiedź 1");
-            Answers.Add("Odpowiedź 2");
-            Answers.Add("Odpowiedź 3");
-            Answers.Add("Odpowiedź 4");
+            //Answers.Add("Odpowiedź 1");
+            //Answers.Add("Odpowiedź 2");
+            //Answers.Add("Odpowiedź 3");
+            //Answers.Add("Odpowiedź 4");
 
             _timeLeft = 0;
 

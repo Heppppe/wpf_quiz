@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "W88VsK7WWTg=",
+  "dgSpecHash": "Gg8UjpkK03E=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kacper\\Studia\\s_4\\Programowanie obiektowe i graficzne\\Projekt_wersja_wlasciwa\\quiz_solver\\Quiz Solver App\\Quiz Solver App.csproj",
+  "projectFilePath": "C:\\Users\\SQ205\\Desktop\\inne\\programowanie\\quiz\\quiz_solver\\Quiz Solver App\\Quiz Solver App.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Kacper\\.nuget\\packages\\system.windows.interactivity.wpf\\2.0.20525\\system.windows.interactivity.wpf.2.0.20525.nupkg.sha512"
+    "C:\\Users\\SQ205\\.nuget\\packages\\system.windows.interactivity.wpf\\2.0.20525\\system.windows.interactivity.wpf.2.0.20525.nupkg.sha512"
   ],
   "logs": [
     {
