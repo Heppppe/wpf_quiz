@@ -20,6 +20,7 @@ namespace Quiz_Solver_App
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new MainViewModel();
         }
     }
 }

@@ -17,10 +17,10 @@ namespace Quiz_Solver_App.ViewModel.Base
             _navigationService = navigationService;
         }
 
-        public MainMenuViewModel CreateMainMenuVM()
-        {
-            return new MainMenuViewModel(_navigationService, this);
-        }
+        //public MainMenuViewModel CreateMainMenuVM()
+        //{
+        //    return new MainMenuViewModel(_navigationService, this);
+        //}
 
         //public QuizSolverViewModel CreateQuizSolverVM()
         //{

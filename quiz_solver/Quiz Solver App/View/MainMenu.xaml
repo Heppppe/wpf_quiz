@@ -1,8 +1,8 @@
 ﻿<UserControl x:Class="Quiz_Solver_App.View.MainMenu"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:local="clr-namespace:Quiz_Solver_App.View"
              mc:Ignorable="d" 
              d:DesignHeight="700" d:DesignWidth="1200">
@@ -12,6 +12,24 @@
            FontWeight="Bold"
            Margin="20,50,20,100"
            HorizontalAlignment="Center"/>
+        <ListBox ItemsSource="{Binding Quizzes}"
+         SelectedItem="{Binding SelectedQuiz}"
+         BorderThickness="0"
+                 Height="150">
+
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <DockPanel Margin="5">
+                        <TextBlock Text="{Binding Title}" FontSize="16" DockPanel.Dock="Left" VerticalAlignment="Center" />
+                        <Button Content="Rozwiąż"
+                        Width="60"
+                        Margin="10 0 0 0"
+                        Command="{Binding DataContext.ChooseCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                        CommandParameter="{Binding}" />
+                    </DockPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
         <Button Content="Wybierz plik .json"
             Command="{Binding SelectJsonFileCommand}" 
             Width="200" Height="40" Margin="10,10,10,25"/>
