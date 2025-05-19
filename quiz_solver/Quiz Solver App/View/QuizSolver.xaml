@@ -47,6 +47,11 @@
             </ItemsControl>
         </StackPanel>
 
+        <StackPanel Grid.Row="2" Grid.Column="1">
+            <Button Content="Zakończ quiz" Command="{Binding EndQuizCommand}"/>
+
+        </StackPanel>
+
         <!-- Nawigacja -->
         <Grid Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2">
             <Grid.ColumnDefinitions>

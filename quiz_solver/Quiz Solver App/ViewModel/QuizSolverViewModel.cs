@@ -13,10 +13,13 @@ namespace Quiz_Solver_App.ViewModel
 {
     public class QuizSolverViewModel : ViewModelBase
     {
+        private bool isQuizActive;
+        private Quiz _quiz;
         private readonly DispatcherTimer _timer;
         private int _timeLeft;
 
-        public ObservableCollection<string> Answers { get; } = new();
+
+        public ObservableCollection<Answer> Answers { get; } = new();
         private string _questionText;
         public string QuestionText
         {
@@ -29,6 +32,23 @@ namespace Quiz_Solver_App.ViewModel
         {
             get => _selectedAnswerIndex;
             set { _selectedAnswerIndex = value; OnPropertyChanged(nameof(SelectedAnswerIndex)); }
+        }
+
+        private Question _currentQuestion;
+        public Question CurrentQuestion
+        {
+            get => _currentQuestion;
+            set
+            {
+                _currentQuestion = value;
+                QuestionText = _currentQuestion.Text;
+                Answers.Clear();
+                foreach (var answer in _currentQuestion.Answers)
+                {
+                    Answers.Add(answer);
+                }
+                OnPropertyChanged(nameof(CurrentQuestion));
+            }
         }
 
         public string TimeLeftDisplay => TimeSpan.FromSeconds(_timeLeft).ToString(@"mm\:ss");
@@ -46,7 +66,7 @@ namespace Quiz_Solver_App.ViewModel
             Answers.Add("Odpowiedź 3");
             Answers.Add("Odpowiedź 4");
 
-            _timeLeft = 60;
+            _timeLeft = 0;
 
             _timer = new DispatcherTimer();
             _timer.Interval = TimeSpan.FromSeconds(1);
@@ -60,26 +80,40 @@ namespace Quiz_Solver_App.ViewModel
 
         private void Timer_Tick(object sender, EventArgs e)
         {
-            if (_timeLeft > 0)
-            {
-                _timeLeft--;
+                _timeLeft++;
                 OnPropertyChanged(nameof(TimeLeftDisplay));
-            }
-            else
-            {
-                _timer.Stop();
-                // Możesz dodać logikę po zakończeniu czasu
-            }
         }
 
         private void NextQuestion()
         {
-            // Logika przejścia do następnego pytania
+            CurrentQuestion = _quiz.Questions[_quiz.Questions.IndexOf(CurrentQuestion) + 1];
+            OnPropertyChanged(nameof(CurrentQuestion));
+
         }
 
         private void PreviousQuestion()
         {
-            // Logika przejścia do poprzedniego pytania
+            CurrentQuestion = _quiz.Questions[_quiz.Questions.IndexOf(CurrentQuestion) - 1];
+            OnPropertyChanged(nameof(CurrentQuestion));
+        }
+
+        private ICommand _endQuizCommand;
+        public ICommand EndQuizCommand
+        {
+            get
+            {
+                return _endQuizCommand ??= new RelayCommand(_ =>
+                {
+                    EndQuiz();
+                    MessageBox.Show("Quiz zakończony!");
+                }, _ => true);
+            }
+        }
+
+        private void EndQuiz()
+        {
+            isQuizActive = false;
+            _timer.Stop();
         }
     }
 }
