@@ -11,6 +11,8 @@ using Quiz_Solver_App.Services;
 using Quiz_Solver_App.ViewModel.Base;
 using Microsoft.Win32;
 using System.Windows.Input;
+using System.Text.Json;
+using System.IO;
 
 namespace Quiz_Solver_App.ViewModel
 {
@@ -39,6 +41,7 @@ namespace Quiz_Solver_App.ViewModel
             SelectJsonFileCommand = new RelayCommand(_ => SelectJsonFile(), _ => true);
         }
 
+        public List<QuizQuestion> _questions;
         private void SelectJsonFile()
         {
             var openFileDialog = new OpenFileDialog
@@ -50,7 +53,12 @@ namespace Quiz_Solver_App.ViewModel
             if (openFileDialog.ShowDialog() == true)
             {
                 SelectedJsonFilePath = openFileDialog.FileName;
-                // Tutaj możesz dodać kod do wczytania i przetworzenia pliku
+
+                // Wczytaj i zdeserializuj plik
+                string json = File.ReadAllText(SelectedJsonFilePath);
+                _questions = JsonSerializer.Deserialize<List<QuizQuestion>>(json);
+
+                // Teraz możesz przekazać _questions do QuizSolverViewModel lub zainicjować quiz
             }
         }
     }

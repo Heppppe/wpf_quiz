@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Kacper\\Studia\\s_4\\Programowanie obiektowe i graficzne\\Projekt_wersja_wlasciwa\\quiz_solver\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BD9D37A0-CBFF-4469-90A0-BBB30D4BA80C}|Quiz Solver App\\Quiz Solver App.csproj|c:\\users\\kacper\\studia\\s_4\\programowanie obiektowe i graficzne\\projekt_wersja_wlasciwa\\quiz_solver\\quiz solver app\\viewmodel\\base\\viewmodelfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD9D37A0-CBFF-4469-90A0-BBB30D4BA80C}|Quiz Solver App\\Quiz Solver App.csproj|solutionrelative:quiz solver app\\viewmodel\\base\\viewmodelfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BD9D37A0-CBFF-4469-90A0-BBB30D4BA80C}|Quiz Solver App\\Quiz Solver App.csproj|c:\\users\\kacper\\studia\\s_4\\programowanie obiektowe i graficzne\\projekt_wersja_wlasciwa\\quiz_solver\\quiz solver app\\viewmodel\\quizsolverviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD9D37A0-CBFF-4469-90A0-BBB30D4BA80C}|Quiz Solver App\\Quiz Solver App.csproj|solutionrelative:quiz solver app\\viewmodel\\quizsolverviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{BD9D37A0-CBFF-4469-90A0-BBB30D4BA80C}|Quiz Solver App\\Quiz Solver App.csproj|c:\\users\\kacper\\studia\\s_4\\programowanie obiektowe i graficzne\\projekt_wersja_wlasciwa\\quiz_solver\\quiz solver app\\viewmodel\\mainmenuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD9D37A0-CBFF-4469-90A0-BBB30D4BA80C}|Quiz Solver App\\Quiz Solver App.csproj|solutionrelative:quiz solver app\\viewmodel\\mainmenuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD9D37A0-CBFF-4469-90A0-BBB30D4BA80C}|Quiz Solver App\\Quiz Solver App.csproj|c:\\users\\kacper\\studia\\s_4\\programowanie obiektowe i graficzne\\projekt_wersja_wlasciwa\\quiz_solver\\quiz solver app\\model\\quizquestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD9D37A0-CBFF-4469-90A0-BBB30D4BA80C}|Quiz Solver App\\Quiz Solver App.csproj|solutionrelative:quiz solver app\\model\\quizquestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BD9D37A0-CBFF-4469-90A0-BBB30D4BA80C}|Quiz Solver App\\Quiz Solver App.csproj|c:\\users\\kacper\\studia\\s_4\\programowanie obiektowe i graficzne\\projekt_wersja_wlasciwa\\quiz_solver\\quiz solver app\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD9D37A0-CBFF-4469-90A0-BBB30D4BA80C}|Quiz Solver App\\Quiz Solver App.csproj|solutionrelative:quiz solver app\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD9D37A0-CBFF-4469-90A0-BBB30D4BA80C}|Quiz Solver App\\Quiz Solver App.csproj|c:\\users\\kacper\\studia\\s_4\\programowanie obiektowe i graficzne\\projekt_wersja_wlasciwa\\quiz_solver\\quiz solver app\\viewmodel\\base\\viewmodelfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD9D37A0-CBFF-4469-90A0-BBB30D4BA80C}|Quiz Solver App\\Quiz Solver App.csproj|solutionrelative:quiz solver app\\viewmodel\\base\\viewmodelfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD9D37A0-CBFF-4469-90A0-BBB30D4BA80C}|Quiz Solver App\\Quiz Solver App.csproj|c:\\users\\kacper\\studia\\s_4\\programowanie obiektowe i graficzne\\projekt_wersja_wlasciwa\\quiz_solver\\quiz solver app\\view\\quizsolver.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BD9D37A0-CBFF-4469-90A0-BBB30D4BA80C}|Quiz Solver App\\Quiz Solver App.csproj|solutionrelative:quiz solver app\\view\\quizsolver.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,40 +46,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "MainMenuViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Kacper\\Studia\\s_4\\Programowanie obiektowe i graficzne\\Projekt_wersja_wlasciwa\\quiz_solver\\Quiz Solver App\\ViewModel\\MainMenuViewModel.cs",
+              "RelativeDocumentMoniker": "Quiz Solver App\\ViewModel\\MainMenuViewModel.cs",
+              "ToolTip": "C:\\Users\\Kacper\\Studia\\s_4\\Programowanie obiektowe i graficzne\\Projekt_wersja_wlasciwa\\quiz_solver\\Quiz Solver App\\ViewModel\\MainMenuViewModel.cs",
+              "RelativeToolTip": "Quiz Solver App\\ViewModel\\MainMenuViewModel.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAA3wCsAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T10:37:25.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "QuizQuestion.cs",
+              "DocumentMoniker": "C:\\Users\\Kacper\\Studia\\s_4\\Programowanie obiektowe i graficzne\\Projekt_wersja_wlasciwa\\quiz_solver\\Quiz Solver App\\Model\\QuizQuestion.cs",
+              "RelativeDocumentMoniker": "Quiz Solver App\\Model\\QuizQuestion.cs",
+              "ToolTip": "C:\\Users\\Kacper\\Studia\\s_4\\Programowanie obiektowe i graficzne\\Projekt_wersja_wlasciwa\\quiz_solver\\Quiz Solver App\\Model\\QuizQuestion.cs",
+              "RelativeToolTip": "Quiz Solver App\\Model\\QuizQuestion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T10:36:43.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ViewModelFactory.cs",
               "DocumentMoniker": "C:\\Users\\Kacper\\Studia\\s_4\\Programowanie obiektowe i graficzne\\Projekt_wersja_wlasciwa\\quiz_solver\\Quiz Solver App\\ViewModel\\Base\\ViewModelFactory.cs",
               "RelativeDocumentMoniker": "Quiz Solver App\\ViewModel\\Base\\ViewModelFactory.cs",
               "ToolTip": "C:\\Users\\Kacper\\Studia\\s_4\\Programowanie obiektowe i graficzne\\Projekt_wersja_wlasciwa\\quiz_solver\\Quiz Solver App\\ViewModel\\Base\\ViewModelFactory.cs",
               "RelativeToolTip": "Quiz Solver App\\ViewModel\\Base\\ViewModelFactory.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAYwBwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBsAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-19T10:21:56.356Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MainViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Kacper\\Studia\\s_4\\Programowanie obiektowe i graficzne\\Projekt_wersja_wlasciwa\\quiz_solver\\Quiz Solver App\\ViewModel\\MainViewModel.cs",
               "RelativeDocumentMoniker": "Quiz Solver App\\ViewModel\\MainViewModel.cs",
               "ToolTip": "C:\\Users\\Kacper\\Studia\\s_4\\Programowanie obiektowe i graficzne\\Projekt_wersja_wlasciwa\\quiz_solver\\Quiz Solver App\\ViewModel\\MainViewModel.cs",
               "RelativeToolTip": "Quiz Solver App\\ViewModel\\MainViewModel.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T10:13:03.416Z"
+              "WhenOpened": "2025-05-19T10:13:03.416Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "QuizSolverViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Kacper\\Studia\\s_4\\Programowanie obiektowe i graficzne\\Projekt_wersja_wlasciwa\\quiz_solver\\Quiz Solver App\\ViewModel\\QuizSolverViewModel.cs",
               "RelativeDocumentMoniker": "Quiz Solver App\\ViewModel\\QuizSolverViewModel.cs",
               "ToolTip": "C:\\Users\\Kacper\\Studia\\s_4\\Programowanie obiektowe i graficzne\\Projekt_wersja_wlasciwa\\quiz_solver\\Quiz Solver App\\ViewModel\\QuizSolverViewModel.cs",
               "RelativeToolTip": "Quiz Solver App\\ViewModel\\QuizSolverViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAADwvzoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T22:32:41.962Z"
+              "WhenOpened": "2025-05-18T22:32:41.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "QuizSolver.xaml",
+              "DocumentMoniker": "C:\\Users\\Kacper\\Studia\\s_4\\Programowanie obiektowe i graficzne\\Projekt_wersja_wlasciwa\\quiz_solver\\Quiz Solver App\\View\\QuizSolver.xaml",
+              "RelativeDocumentMoniker": "Quiz Solver App\\View\\QuizSolver.xaml",
+              "ToolTip": "C:\\Users\\Kacper\\Studia\\s_4\\Programowanie obiektowe i graficzne\\Projekt_wersja_wlasciwa\\quiz_solver\\Quiz Solver App\\View\\QuizSolver.xaml*",
+              "RelativeToolTip": "Quiz Solver App\\View\\QuizSolver.xaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-19T10:34:40.284Z",
+              "EditorCaption": ""
             }
           ]
         }
