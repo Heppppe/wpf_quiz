@@ -117,9 +117,11 @@ namespace Quiz_Solver_App.ViewModel
         {
             if (parameter is Quiz quiz)
             {
-                MainViewModel.Current.CurrentViewModel = new QuizSolverViewModel(100);
+                MainViewModel.Current.CurrentViewModel = new QuizSolverViewModel();
             }
         }
+
+        public List<QuizQuestion> _questions;
         private void SelectJsonFile()
         {
             var openFileDialog = new OpenFileDialog
@@ -131,15 +133,19 @@ namespace Quiz_Solver_App.ViewModel
             if (openFileDialog.ShowDialog() == true)
             {
                 SelectedJsonFilePath = openFileDialog.FileName;
-                // Tutaj możesz dodać kod do wczytania i przetworzenia pliku
+
+                // Wczytaj i zdeserializuj plik
+                string json = File.ReadAllText(SelectedJsonFilePath);
+                _questions = JsonSerializer.Deserialize<List<QuizQuestion>>(json);
+
+                // Teraz możesz przekazać _questions do QuizSolverViewModel lub zainicjować quiz
             }
         }
-        public event PropertyChangedEventHandler PropertyChanged;
-
         protected void OnPropertyChanged([CallerMemberName] string propertyName = "")
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+        public event PropertyChangedEventHandler PropertyChanged;
     }
 
 }

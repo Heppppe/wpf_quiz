@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "cNXnOR83rOE=",
+  "dgSpecHash": "+X5UoW9e414=",
   "success": true,
-  "projectFilePath": "C:\\Users\\SQ205\\Desktop\\inne\\programowanie\\quiz\\quiz_maker\\quiz_maker.csproj",
+  "projectFilePath": "C:\\Users\\Kacper\\Studia\\s_4\\Programowanie obiektowe i graficzne\\Projekt_wersja_wlasciwa\\quiz_maker\\quiz_maker.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\SQ205\\.nuget\\packages\\refractored.mvvmhelpers\\1.6.2\\refractored.mvvmhelpers.1.6.2.nupkg.sha512",
-    "C:\\Users\\SQ205\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512"
+    "C:\\Users\\Kacper\\.nuget\\packages\\refractored.mvvmhelpers\\1.6.2\\refractored.mvvmhelpers.1.6.2.nupkg.sha512",
+    "C:\\Users\\Kacper\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }

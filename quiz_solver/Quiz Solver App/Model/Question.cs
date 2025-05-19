@@ -3,7 +3,7 @@ using System.ComponentModel;
 
 public class Question : INotifyPropertyChanged
 {
-    private string _text { get; set; } = "Wczytywanie pytania...";
+    private string _text;
     public string Text
     {
         get => _text;
@@ -11,6 +11,16 @@ public class Question : INotifyPropertyChanged
     }
 
     public ObservableCollection<Answer> Answers { get; set; } = new();
+
+    public void AddAnswer(string text, bool isCorrect)
+    {
+        Answers.Add(new Answer(text, isCorrect));
+    }
+
+    public void RemoveAnswer(Answer answer)
+    {
+        Answers.Remove(answer);
+    }
 
     public event PropertyChangedEventHandler? PropertyChanged;
     protected void OnPropertyChanged(string name) => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));

@@ -13,11 +13,13 @@ namespace Quiz_Solver_App.ViewModel
 {
     public class QuizSolverViewModel : ViewModelBase
     {
-        private const int V = 1000;
-        private readonly System.Threading.Timer _timer;
+        private bool isQuizActive;
+        private Quiz _quiz;
+        private readonly DispatcherTimer _timer;
         private int _timeLeft;
 
-        public ObservableCollection<string> Answers { get; } = new();
+
+        public ObservableCollection<Answer> Answers { get; } = new();
         private string _questionText;
         public string QuestionText
         {
@@ -32,46 +34,86 @@ namespace Quiz_Solver_App.ViewModel
             set { _selectedAnswerIndex = value; OnPropertyChanged(nameof(SelectedAnswerIndex)); }
         }
 
+        private Question _currentQuestion;
+        public Question CurrentQuestion
+        {
+            get => _currentQuestion;
+            set
+            {
+                _currentQuestion = value;
+                QuestionText = _currentQuestion.Text;
+                Answers.Clear();
+                foreach (var answer in _currentQuestion.Answers)
+                {
+                    Answers.Add(answer);
+                }
+                OnPropertyChanged(nameof(CurrentQuestion));
+            }
+        }
+
         public string TimeLeftDisplay => TimeSpan.FromSeconds(_timeLeft).ToString(@"mm\:ss");
 
         public ICommand NextQuestionCommand { get; }
         public ICommand PreviousQuestionCommand { get; }
         public ICommand SelectAnswerCommand { get; }
 
-        public QuizSolverViewModel(int v)
+        public QuizSolverViewModel()
         {
             // Przykładowe dane
             QuestionText = "Przykładowe pytanie?";
-            Answers.Add("Odpowiedź 1");
-            Answers.Add("Odpowiedź 2");
-            Answers.Add("Odpowiedź 3");
-            Answers.Add("Odpowiedź 4");
+            //Answers.Add("Odpowiedź 1");
+            //Answers.Add("Odpowiedź 2");
+            //Answers.Add("Odpowiedź 3");
+            //Answers.Add("Odpowiedź 4");
 
-            //_timeLeft = 60;
-            //_timer = new System.Threading.Timer(v);
-            //_timer.Elapsed += (s, e) =>
-            //{
-            //    if (_timeLeft > 0)
-            //    {
-            //        _timeLeft--;
-            //        OnPropertyChanged(nameof(TimeLeftDisplay));
-            //    }
-            //};
-            //_timer.Start();
+            _timeLeft = 0;
+
+            _timer = new DispatcherTimer();
+            _timer.Interval = TimeSpan.FromSeconds(1);
+            _timer.Tick += Timer_Tick;
+            _timer.Start();
 
             NextQuestionCommand = new RelayCommand(_ => NextQuestion(), _ => true);
             PreviousQuestionCommand = new RelayCommand(_ => PreviousQuestion(), _ => true);
             SelectAnswerCommand = new RelayCommand(index => SelectedAnswerIndex = (int)index, _ => true);
         }
 
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+                _timeLeft++;
+                OnPropertyChanged(nameof(TimeLeftDisplay));
+        }
+
         private void NextQuestion()
         {
-            // Logika przejścia do następnego pytania
+            CurrentQuestion = _quiz.Questions[_quiz.Questions.IndexOf(CurrentQuestion) + 1];
+            OnPropertyChanged(nameof(CurrentQuestion));
+
         }
 
         private void PreviousQuestion()
         {
-            // Logika przejścia do poprzedniego pytania
+            CurrentQuestion = _quiz.Questions[_quiz.Questions.IndexOf(CurrentQuestion) - 1];
+            OnPropertyChanged(nameof(CurrentQuestion));
+        }
+
+        private ICommand _endQuizCommand;
+        public ICommand EndQuizCommand
+        {
+            get
+            {
+                return _endQuizCommand ??= new RelayCommand(_ =>
+                {
+                    EndQuiz();
+                    MessageBox.Show("Quiz zakończony!");
+                }, _ => true);
+            }
+        }
+
+        private void EndQuiz()
+        {
+            isQuizActive = false;
+            _timer.Stop();
         }
     }
 }

@@ -17,6 +17,12 @@ public class Answer : INotifyPropertyChanged
         set { _isCorrect = value; OnPropertyChanged(nameof(IsCorrect)); }
     }
 
+    public Answer(string text, bool isCorrect)
+    {
+        Text = text;
+        IsCorrect = isCorrect;
+    }
+
     public event PropertyChangedEventHandler? PropertyChanged;
     protected void OnPropertyChanged(string propertyName) =>
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));

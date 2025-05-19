@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\SQ205\\Desktop\\inne\\programowanie\\quiz\\quiz_solver\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BD9D37A0-CBFF-4469-90A0-BBB30D4BA80C}|Quiz Solver App\\Quiz Solver App.csproj|c:\\users\\sq205\\desktop\\inne\\programowanie\\quiz\\quiz_solver\\quiz solver app\\viewmodel\\quizsolverviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD9D37A0-CBFF-4469-90A0-BBB30D4BA80C}|Quiz Solver App\\Quiz Solver App.csproj|solutionrelative:quiz solver app\\viewmodel\\quizsolverviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BD9D37A0-CBFF-4469-90A0-BBB30D4BA80C}|Quiz Solver App\\Quiz Solver App.csproj|c:\\users\\sq205\\desktop\\inne\\programowanie\\quiz\\quiz_solver\\quiz solver app\\viewmodel\\mainmenuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD9D37A0-CBFF-4469-90A0-BBB30D4BA80C}|Quiz Solver App\\Quiz Solver App.csproj|solutionrelative:quiz solver app\\viewmodel\\mainmenuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -33,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{BD9D37A0-CBFF-4469-90A0-BBB30D4BA80C}|Quiz Solver App\\Quiz Solver App.csproj|c:\\users\\sq205\\desktop\\inne\\programowanie\\quiz\\quiz_solver\\quiz solver app\\viewmodel\\base\\viewmodelfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD9D37A0-CBFF-4469-90A0-BBB30D4BA80C}|Quiz Solver App\\Quiz Solver App.csproj|solutionrelative:quiz solver app\\viewmodel\\base\\viewmodelfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD9D37A0-CBFF-4469-90A0-BBB30D4BA80C}|Quiz Solver App\\Quiz Solver App.csproj|c:\\users\\sq205\\desktop\\inne\\programowanie\\quiz\\quiz_solver\\quiz solver app\\viewmodel\\quizsolverviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD9D37A0-CBFF-4469-90A0-BBB30D4BA80C}|Quiz Solver App\\Quiz Solver App.csproj|solutionrelative:quiz solver app\\viewmodel\\quizsolverviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BD9D37A0-CBFF-4469-90A0-BBB30D4BA80C}|Quiz Solver App\\Quiz Solver App.csproj|c:\\users\\sq205\\desktop\\inne\\programowanie\\quiz\\quiz_solver\\quiz solver app\\model\\quiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -79,56 +79,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MainMenuViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\SQ205\\Desktop\\inne\\programowanie\\quiz\\quiz_solver\\Quiz Solver App\\ViewModel\\MainMenuViewModel.cs",
-              "RelativeDocumentMoniker": "Quiz Solver App\\ViewModel\\MainMenuViewModel.cs",
-              "ToolTip": "C:\\Users\\SQ205\\Desktop\\inne\\programowanie\\quiz\\quiz_solver\\Quiz Solver App\\ViewModel\\MainMenuViewModel.cs",
-              "RelativeToolTip": "Quiz Solver App\\ViewModel\\MainMenuViewModel.cs",
-              "ViewState": "AgIAAGwAAAAAAAAAAADgv3MAAAAxAAAAAAAAAA==",
+              "Title": "QuizSolverViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\SQ205\\Desktop\\inne\\programowanie\\quiz\\quiz_solver\\Quiz Solver App\\ViewModel\\QuizSolverViewModel.cs",
+              "RelativeDocumentMoniker": "Quiz Solver App\\ViewModel\\QuizSolverViewModel.cs",
+              "ToolTip": "C:\\Users\\SQ205\\Desktop\\inne\\programowanie\\quiz\\quiz_solver\\Quiz Solver App\\ViewModel\\QuizSolverViewModel.cs",
+              "RelativeToolTip": "Quiz Solver App\\ViewModel\\QuizSolverViewModel.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T10:34:15.152Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainMenu.xaml",
-              "DocumentMoniker": "C:\\Users\\SQ205\\Desktop\\inne\\programowanie\\quiz\\quiz_solver\\Quiz Solver App\\View\\MainMenu.xaml",
-              "RelativeDocumentMoniker": "Quiz Solver App\\View\\MainMenu.xaml",
-              "ToolTip": "C:\\Users\\SQ205\\Desktop\\inne\\programowanie\\quiz\\quiz_solver\\Quiz Solver App\\View\\MainMenu.xaml",
-              "RelativeToolTip": "Quiz Solver App\\View\\MainMenu.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-19T10:33:56.939Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\SQ205\\Desktop\\inne\\programowanie\\quiz\\quiz_solver\\Quiz Solver App\\View\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "Quiz Solver App\\View\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\SQ205\\Desktop\\inne\\programowanie\\quiz\\quiz_solver\\Quiz Solver App\\View\\MainWindow.xaml",
-              "RelativeToolTip": "Quiz Solver App\\View\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-19T10:34:03.484Z",
+              "WhenOpened": "2025-05-18T22:32:41.962Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MainViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\SQ205\\Desktop\\inne\\programowanie\\quiz\\quiz_solver\\Quiz Solver App\\ViewModel\\MainViewModel.cs",
-              "RelativeDocumentMoniker": "Quiz Solver App\\ViewModel\\MainViewModel.cs",
-              "ToolTip": "C:\\Users\\SQ205\\Desktop\\inne\\programowanie\\quiz\\quiz_solver\\Quiz Solver App\\ViewModel\\MainViewModel.cs",
-              "RelativeToolTip": "Quiz Solver App\\ViewModel\\MainViewModel.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAiwCIAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T10:13:03.416Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\SQ205\\Desktop\\inne\\programowanie\\quiz\\quiz_solver\\Quiz Solver App\\View\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Quiz Solver App\\View\\MainWindow.xaml.cs",
@@ -136,24 +99,69 @@
               "RelativeToolTip": "Quiz Solver App\\View\\MainWindow.xaml.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAowBYAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T11:21:20.658Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T11:21:20.658Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\SQ205\\Desktop\\inne\\programowanie\\quiz\\quiz_solver\\Quiz Solver App\\App.xaml",
               "RelativeDocumentMoniker": "Quiz Solver App\\App.xaml",
               "ToolTip": "C:\\Users\\SQ205\\Desktop\\inne\\programowanie\\quiz\\quiz_solver\\Quiz Solver App\\App.xaml",
               "RelativeToolTip": "Quiz Solver App\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-19T11:11:13.032Z",
+              "WhenOpened": "2025-05-19T11:11:13.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\SQ205\\Desktop\\inne\\programowanie\\quiz\\quiz_solver\\Quiz Solver App\\ViewModel\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "Quiz Solver App\\ViewModel\\MainViewModel.cs",
+              "ToolTip": "C:\\Users\\SQ205\\Desktop\\inne\\programowanie\\quiz\\quiz_solver\\Quiz Solver App\\ViewModel\\MainViewModel.cs",
+              "RelativeToolTip": "Quiz Solver App\\ViewModel\\MainViewModel.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAiwCIAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T10:13:03.416Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainMenuViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\SQ205\\Desktop\\inne\\programowanie\\quiz\\quiz_solver\\Quiz Solver App\\ViewModel\\MainMenuViewModel.cs",
+              "RelativeDocumentMoniker": "Quiz Solver App\\ViewModel\\MainMenuViewModel.cs",
+              "ToolTip": "C:\\Users\\SQ205\\Desktop\\inne\\programowanie\\quiz\\quiz_solver\\Quiz Solver App\\ViewModel\\MainMenuViewModel.cs",
+              "RelativeToolTip": "Quiz Solver App\\ViewModel\\MainMenuViewModel.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAIA8wJMAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T10:34:15.152Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\SQ205\\Desktop\\inne\\programowanie\\quiz\\quiz_solver\\Quiz Solver App\\View\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Quiz Solver App\\View\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\SQ205\\Desktop\\inne\\programowanie\\quiz\\quiz_solver\\Quiz Solver App\\View\\MainWindow.xaml",
+              "RelativeToolTip": "Quiz Solver App\\View\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-19T10:34:03.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainMenu.xaml",
+              "DocumentMoniker": "C:\\Users\\SQ205\\Desktop\\inne\\programowanie\\quiz\\quiz_solver\\Quiz Solver App\\View\\MainMenu.xaml",
+              "RelativeDocumentMoniker": "Quiz Solver App\\View\\MainMenu.xaml",
+              "ToolTip": "C:\\Users\\SQ205\\Desktop\\inne\\programowanie\\quiz\\quiz_solver\\Quiz Solver App\\View\\MainMenu.xaml",
+              "RelativeToolTip": "Quiz Solver App\\View\\MainMenu.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-19T10:33:56.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\SQ205\\Desktop\\inne\\programowanie\\quiz\\quiz_solver\\Quiz Solver App\\App.xaml.cs",
               "RelativeDocumentMoniker": "Quiz Solver App\\App.xaml.cs",
@@ -161,12 +169,11 @@
               "RelativeToolTip": "Quiz Solver App\\App.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T10:51:30.318Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T10:51:30.318Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ViewModelFactory.cs",
               "DocumentMoniker": "C:\\Users\\SQ205\\Desktop\\inne\\programowanie\\quiz\\quiz_solver\\Quiz Solver App\\ViewModel\\Base\\ViewModelFactory.cs",
               "RelativeDocumentMoniker": "Quiz Solver App\\ViewModel\\Base\\ViewModelFactory.cs",
@@ -174,21 +181,7 @@
               "RelativeToolTip": "Quiz Solver App\\ViewModel\\Base\\ViewModelFactory.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAAwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T10:21:56.356Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "QuizSolverViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\SQ205\\Desktop\\inne\\programowanie\\quiz\\quiz_solver\\Quiz Solver App\\ViewModel\\QuizSolverViewModel.cs",
-              "RelativeDocumentMoniker": "Quiz Solver App\\ViewModel\\QuizSolverViewModel.cs",
-              "ToolTip": "C:\\Users\\SQ205\\Desktop\\inne\\programowanie\\quiz\\quiz_solver\\Quiz Solver App\\ViewModel\\QuizSolverViewModel.cs",
-              "RelativeToolTip": "Quiz Solver App\\ViewModel\\QuizSolverViewModel.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T22:32:41.962Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T10:21:56.356Z"
             },
             {
               "$type": "Document",
@@ -200,8 +193,7 @@
               "RelativeToolTip": "Quiz Solver App\\Model\\Quiz.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T10:41:41.456Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T10:41:41.456Z"
             },
             {
               "$type": "Document",
@@ -213,8 +205,7 @@
               "RelativeToolTip": "Quiz Solver App\\Model\\Question.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T10:42:13.127Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T10:42:13.127Z"
             },
             {
               "$type": "Document",
@@ -226,8 +217,7 @@
               "RelativeToolTip": "Quiz Solver App\\Model\\Answer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T10:42:54.646Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T10:42:54.646Z"
             },
             {
               "$type": "Document",
@@ -238,8 +228,7 @@
               "ToolTip": "C:\\Users\\SQ205\\Desktop\\inne\\programowanie\\quiz\\quiz_solver\\Quiz Solver App\\View\\QuizSolver.xaml",
               "RelativeToolTip": "Quiz Solver App\\View\\QuizSolver.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-19T10:34:07.28Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T10:34:07.28Z"
             },
             {
               "$type": "Document",
@@ -251,8 +240,7 @@
               "RelativeToolTip": "Quiz Solver App\\Model\\QuizQuestion.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T10:40:06.827Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T10:40:06.827Z"
             }
           ]
         }
