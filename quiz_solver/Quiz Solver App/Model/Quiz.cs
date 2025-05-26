@@ -3,7 +3,7 @@ using System.ComponentModel;
 
 public class Quiz : INotifyPropertyChanged
 {
-    public string _title { get; set; } = "Nowy Quiz";
+    public string _title { get; set; } = "Wczytywanie quizu...";
     public string Title
     {
         get => _title;

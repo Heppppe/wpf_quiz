@@ -3,52 +3,167 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:cnvrt="clr-namespace:Quiz_Solver_App.Converters"
              mc:Ignorable="d" 
              d:DesignHeight="700" d:DesignWidth="1200">
 
-    <Grid Margin="20">
+    <UserControl.Resources>
+        <cnvrt:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
+        <cnvrt:BoolToBrushConverter x:Key="BoolToBrushConverter"/>
+    </UserControl.Resources>
+
+    <Grid Background="{StaticResource BackgroundBrush}">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
 
-        <!-- Pasek z pytaniem -->
-        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
-                   Text="{Binding QuestionText}" 
-                   FontSize="24" FontWeight="Bold" Margin="0,0,0,20"/>
+        <Label Grid.Row="0" Grid.Column="0" Content="{Binding QuizTitle}" FontSize="28" HorizontalAlignment="Left"
+               Foreground="{StaticResource TextBrush}"/>
+
+        <ScrollViewer Grid.Row="1" Grid.Column="0"
+                      HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+            <!-- Pasek z pytaniem -->
+            <TextBlock 
+               Text="{Binding CurrentQuestionText}"
+                Foreground="{StaticResource TextBrush}"
+               FontSize="24" FontWeight="Bold" Margin="10,0,0,20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        </ScrollViewer>
+
+        <Grid Grid.Row="2" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <!--PYTANIE 1-->
+
+            <CheckBox Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Margin="15,0,0,0"
+                        Visibility="{Binding CurrentQuestion.AnswersVisibility.Answer1Visible, 
+                             Converter={StaticResource BoolToVisibilityConverter}}"
+                      IsChecked="{Binding CurrentQuestion.SelectedAnswer1, Mode=TwoWay}"
+                      IsEnabled="{Binding AreCheckBoxesEnabled}" />
+            <Border Grid.Row="0" Grid.Column="0" 
+                    BorderBrush="{StaticResource SecondaryBrush}" BorderThickness="1" 
+                    CornerRadius="4" Padding="2" Margin="45,15,5,15">     
+                <ScrollViewer VerticalScrollBarVisibility="Auto"
+                  HorizontalScrollBarVisibility="Disabled"
+                  Height="Auto" MinHeight="80" MaxHeight="300">
+                    <TextBlock Text="{Binding Answer1Text}"
+                   Foreground="{StaticResource TextBrush}"
+                   FontSize="20"
+                   FontWeight="Medium"
+                   TextWrapping="Wrap"
+                   Background="{Binding IsAnswer1Correct, Converter={StaticResource BoolToBrushConverter}}"
+                   HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </ScrollViewer>
+            </Border>
+
+
+            <!--PYTANIE 2-->
+
+            <CheckBox Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" Margin="15,0,0,0"
+                        Visibility="{Binding CurrentQuestion.AnswersVisibility.Answer2Visible, 
+                           Converter={StaticResource BoolToVisibilityConverter}}"
+                      IsChecked="{Binding CurrentQuestion.SelectedAnswer2, Mode=TwoWay}"
+                      IsEnabled="{Binding AreCheckBoxesEnabled}"/>
+            <Border Grid.Row="0" Grid.Column="1" 
+                BorderBrush="{StaticResource SecondaryBrush}" BorderThickness="1" 
+                CornerRadius="4" Padding="2" Margin="45,15,5,15">
+                <ScrollViewer VerticalScrollBarVisibility="Auto"
+                      HorizontalScrollBarVisibility="Disabled"
+                      Height="Auto" MinHeight="80" MaxHeight="300">
+                        <TextBlock Text="{Binding Answer2Text}"
+                                   Foreground="{StaticResource TextBrush}"
+                                   FontSize="20"
+                                   FontWeight="Medium"
+                                   TextWrapping="Wrap"
+                                   Background="{Binding IsAnswer2Correct, Converter={StaticResource BoolToBrushConverter}}"
+                                   HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </ScrollViewer>
+            </Border>
+
+            <!--PYTANIE 3-->
+
+            <CheckBox Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Margin="15,0,0,0"
+                        Visibility="{Binding CurrentQuestion.AnswersVisibility.Answer3Visible, 
+                           Converter={StaticResource BoolToVisibilityConverter}}"
+                      IsChecked="{Binding CurrentQuestion.SelectedAnswer3, Mode=TwoWay}"
+                      IsEnabled="{Binding AreCheckBoxesEnabled}"/>
+            <Border Grid.Row="1" Grid.Column="0" 
+                    Visibility="{Binding CurrentQuestion.AnswersVisibility.Answer3Visible, 
+     Converter={StaticResource BoolToVisibilityConverter}}"
+                BorderBrush="{StaticResource SecondaryBrush}" BorderThickness="1" 
+                CornerRadius="4" Padding="2" Margin="45,15,5,15">
+                <ScrollViewer VerticalScrollBarVisibility="Auto"
+                      HorizontalScrollBarVisibility="Disabled"
+                      Height="Auto" MinHeight="80" MaxHeight="300">
+                        <TextBlock Text="{Binding Answer3Text}" 
+                                FontSize="20"
+                                FontWeight="Medium"
+                                Foreground="{StaticResource TextBrush}"
+                                TextWrapping="Wrap"
+                                Background="{Binding IsAnswer3Correct, Converter={StaticResource BoolToBrushConverter}}"
+                                   HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </ScrollViewer>
+            </Border>
+
+            <!--PYTANIE 4-->
+
+            <CheckBox Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Margin="15,0,0,0"
+                      Visibility="{Binding CurrentQuestion.AnswersVisibility.Answer4Visible, 
+                           Converter={StaticResource BoolToVisibilityConverter}}"
+                      IsChecked="{Binding CurrentQuestion.SelectedAnswer4, Mode=TwoWay}"
+                      IsEnabled="{Binding AreCheckBoxesEnabled}"/>
+
+            <Border Grid.Row="1" Grid.Column="1" 
+                    Visibility="{Binding CurrentQuestion.AnswersVisibility.Answer4Visible, 
+     Converter={StaticResource BoolToVisibilityConverter}}"
+                BorderBrush="{StaticResource SecondaryBrush}" BorderThickness="1" 
+                CornerRadius="4" Padding="2" Margin="45,15,5,15">
+                <ScrollViewer VerticalScrollBarVisibility="Auto"
+                      HorizontalScrollBarVisibility="Disabled"
+                      Height="Auto" MinHeight="80" MaxHeight="300">
+                        <TextBlock Text="{Binding Answer4Text}" 
+                                FontSize="20"
+                                FontWeight="Medium"
+                                Foreground="{StaticResource TextBrush}"
+                                TextWrapping="Wrap"
+                                Background="{Binding IsAnswer4Correct, Converter={StaticResource BoolToBrushConverter}}"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </ScrollViewer>
+            </Border>
+            
+        </Grid>
 
         <!-- Okienko z czasem -->
-        <Border Grid.Row="1" Grid.Column="1" Margin="0,0,0,20" Padding="10"
-                BorderBrush="Gray" BorderThickness="1" CornerRadius="5" HorizontalAlignment="Right">
-            <TextBlock Text="{Binding TimeLeftDisplay}" FontSize="20" FontWeight="SemiBold"/>
+        <Border Grid.Row="1" Grid.Column="1" Margin="0,20,0,20" Padding="10"
+                BorderBrush="{StaticResource PrimaryBrush}" BorderThickness="1" CornerRadius="5" HorizontalAlignment="Right">
+            <TextBlock Text="{Binding TimeLeftDisplay}" FontSize="24" FontWeight="Bold" Foreground="#e5383b"/>
         </Border>
 
-        <!-- Odpowiedzi -->
-        <StackPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="0,0,0,20">
-            <ItemsControl ItemsSource="{Binding Answers}">
-                <ItemsControl.ItemTemplate>
-                    <DataTemplate>
-                        <RadioButton Content="{Binding .}"
-                                     GroupName="Answers"
-                                     IsChecked="{Binding DataContext.SelectedAnswerIndex, 
-                                         RelativeSource={RelativeSource AncestorType=UserControl}, 
-                                         Converter={StaticResource IndexToIsCheckedConverter}, 
-                                         ConverterParameter={Binding RelativeSource={RelativeSource Self}}}"
-                                     Command="{Binding DataContext.SelectAnswerCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
-                                     CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=ItemsControl}, Path=Items.CurrentPosition}"/>
-                    </DataTemplate>
-                </ItemsControl.ItemTemplate>
-            </ItemsControl>
-        </StackPanel>
-
         <StackPanel Grid.Row="2" Grid.Column="1">
-            <Button Content="Zakończ quiz" Command="{Binding EndQuizCommand}"/>
+            <Button Content="Zakończ quiz" Command="{Binding EndQuizCommand}" Margin="40,15,40,15" MinWidth="60"/>
+            <Button Content="Załaduj quiz" Command="{Binding LoadQuizCommand}" Margin="40,0,40,15" MinWidth="60"/>
+            <Button Content="Powrót do menu" Command="{Binding NavigateMainMenuCommand}" Margin="40,0,40,15" MinWidth="60"/>
+
+            <StackPanel Grid.Column="1" Grid.Row="2" Visibility="{Binding IsQuizCompleted, Converter={StaticResource BoolToVisibilityConverter}}" HorizontalAlignment="Center">
+                <Label Content="{Binding QuizResultText}"
+                       Foreground="{StaticResource TextBrush}"
+                       FontSize="18"
+                       Margin="10"
+                       FontWeight="Bold"/>
+            </StackPanel>
 
         </StackPanel>
 
@@ -58,8 +173,14 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Button Content="Poprzednie pytanie" Command="{Binding PreviousQuestionCommand}" Grid.Column="0" HorizontalAlignment="Left" Width="180"/>
-            <Button Content="Następne pytanie" Command="{Binding NextQuestionCommand}" Grid.Column="1" HorizontalAlignment="Right" Width="180"/>
+            <Button Content="Poprzednie pytanie" Command="{Binding PreviousQuestionCommand}"
+                    Grid.Column="0" HorizontalAlignment="Left" Width="180"
+                    FontSize="16" FontWeight="Medium"/>
+            <Button Content="Następne pytanie" Command="{Binding NextQuestionCommand}"
+                    Grid.Column="1" HorizontalAlignment="Right" Width="180"
+                    FontSize="16" FontWeight="Medium"/>
         </Grid>
+
+        
     </Grid>
 </UserControl>

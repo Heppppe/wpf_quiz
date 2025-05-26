@@ -22,10 +22,21 @@ namespace Quiz_Solver_App.ViewModel.Base
             return new MainMenuViewModel(_navigationService, this);
         }
 
-        //public QuizSolverViewModel CreateQuizSolverVM()
-        //{
-        //    //return new QuizSolverViewModel(V, _navigationService);
-        //}
+        public QuizSolverViewModel CreateQuizSolverVM(int quizLoadingMode, string fullPath)
+        {
+            if (quizLoadingMode == 0)
+            {
+                return new QuizSolverViewModel(_navigationService, this, quizLoadingMode, fullPath);
+            }
+            else if (quizLoadingMode == 1)
+            {
+                return new QuizSolverViewModel(_navigationService, this, quizLoadingMode, null);
+            }
+            else
+            {
+                throw new ArgumentException("Invalid quiz loading mode");
+            }
+        }
 
     }
 

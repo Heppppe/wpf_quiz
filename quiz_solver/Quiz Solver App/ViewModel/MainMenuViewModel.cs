@@ -11,17 +11,37 @@ using Quiz_Solver_App.Services;
 using Quiz_Solver_App.ViewModel.Base;
 using Microsoft.Win32;
 using System.Windows.Input;
-using System.Text.Json;
 using System.IO;
+using System.Security.Cryptography;
+using System.Text.Json;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
+using Quiz_Solver_App.Model;
 
 namespace Quiz_Solver_App.ViewModel
 {
-    public class MainMenuViewModel : ViewModelBase
+    public class MainMenuViewModel : ViewModelBase, INotifyPropertyChanged
     {
+        public ICommand SelectFileCommand { get; }
+
         private readonly NavigationService _navigationService;
         private readonly ViewModelFactory _viewModelFactory;
+        public ObservableCollection<QuizItems> Quizzes { get; set; } = new();
 
+
+        private QuizItems _selectedQuiz;
+        public QuizItems SelectedQuiz
+        {
+            get => _selectedQuiz;
+            set
+            {
+                _selectedQuiz = value;
+                OnPropertyChanged();
+            }
+        }
         public ICommand SelectJsonFileCommand { get; }
+        public ICommand ChooseCommand { get; }
         private string _selectedJsonFilePath;
         public string SelectedJsonFilePath
         {
@@ -35,31 +55,71 @@ namespace Quiz_Solver_App.ViewModel
 
         public MainMenuViewModel(NavigationService navigationService, ViewModelFactory viewModelFactory)
         {
+            LoadQuizzes();
+
             _navigationService = navigationService;
             _viewModelFactory = viewModelFactory;
+            SelectJsonFileCommand = new RelayCommand(
+                    param =>
+                    {
+                        int quizLoadingMode = Convert.ToInt32(param);
+                        NavigateToQuizSolver(quizLoadingMode, null);
+                    },
+                    _ => true
+                );
+            ChooseCommand = new RelayCommand(
+                param =>
+                    {
+                        if (param is QuizItems quizItem)
+                        {
+                            SelectedQuiz = quizItem;
+                            SelectedJsonFilePath = quizItem.FilePath;
 
-            SelectJsonFileCommand = new RelayCommand(_ => SelectJsonFile(), _ => true);
+                            var quiz = quizItem.Quiz;
+
+                            NavigateToQuizSolver(0,SelectedJsonFilePath);
+                        }
+                    },
+                    _ => true
+                );
         }
 
-        public List<QuizQuestion> _questions;
-        private void SelectJsonFile()
+        private void NavigateToQuizSolver(int quizLoadingMode = 0, string fullPath = null)
         {
-            var openFileDialog = new OpenFileDialog
+            _navigationService.NavigateTo(_viewModelFactory.CreateQuizSolverVM(quizLoadingMode, fullPath));
+        }
+
+
+        private void LoadQuizzes()
+        {
+            var folderPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "../../../../../savedQuizes");
+
+            if (!Directory.Exists(folderPath))
             {
-                Filter = "Pliki JSON (*.json)|*.json",
-                Title = "Wybierz plik quizu"
-            };
-
-            if (openFileDialog.ShowDialog() == true)
-            {
-                SelectedJsonFilePath = openFileDialog.FileName;
-
-                // Wczytaj i zdeserializuj plik
-                string json = File.ReadAllText(SelectedJsonFilePath);
-                _questions = JsonSerializer.Deserialize<List<QuizQuestion>>(json);
-
-                // Teraz możesz przekazać _questions do QuizSolverViewModel lub zainicjować quiz
+                System.Diagnostics.Debug.WriteLine($"[ERROR] Directory not found: {folderPath}");
+                return;
             }
+
+            foreach (var file in Directory.GetFiles(folderPath, "*.json"))
+            {
+                var quiz = AES.DecryptQuiz(file);
+
+                if (quiz?.Questions != null)
+                {
+                    var quizVm = new QuizItems(quiz, Path.GetFullPath(file));
+                    Quizzes.Add(quizVm);
+                }
+                else
+                {
+                    MessageBox.Show($"[WARNING] Invalid quiz format in file: {Path.GetFileName(file)}", "Error");
+                }
+            }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected void OnPropertyChanged([CallerMemberName] string propertyName = "")
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 

@@ -1,23 +1,24 @@
 ﻿<Application x:Class="Quiz_Solver_App.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:Quiz_Solver_App"
-             xmlns:vm="clr-namespace:Quiz_Solver_App.ViewModel"
-             xmlns:views="clr-namespace:Quiz_Solver_App.View"
-             xmlns:System="clr-namespace:System;assembly=mscorlib">
-    
+             xmlns:local="clr-namespace:Quiz_Solver_App">
     <Application.Resources>
-        <ResourceDictionary>
+        <Color x:Key="TextColor">#FFFFFFFF</Color>
+        <Color x:Key="BackgroundColor">#FF01000B</Color>
+        <Color x:Key="PrimaryColor">#FF14213D</Color>
+        <Color x:Key="SecondaryColor">#FFE5E5E5</Color>
+        <Color x:Key="AccentColor">#FFFCA311</Color>
 
+        <SolidColorBrush x:Key="TextBrush" Color="{StaticResource TextColor}"/>
+        <SolidColorBrush x:Key="BackgroundBrush" Color="{StaticResource BackgroundColor}"/>
+        <SolidColorBrush x:Key="PrimaryBrush" Color="{StaticResource PrimaryColor}"/>
+        <SolidColorBrush x:Key="SecondaryBrush" Color="{StaticResource SecondaryColor}"/>
+        <SolidColorBrush x:Key="AccentBrush" Color="{StaticResource AccentColor}"/>
 
-            <DataTemplate DataType="{x:Type vm:MainMenuViewModel}">
-                <views:MainMenu/>
-            </DataTemplate>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="Foreground" Value="{StaticResource BackgroundBrush}"/>
+        </Style>
 
-            <DataTemplate DataType="{x:Type vm:QuizSolverViewModel}">
-                <views:QuizSolver/>
-            </DataTemplate>
-
-        </ResourceDictionary>
     </Application.Resources>
 </Application>
